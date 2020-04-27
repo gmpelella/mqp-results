@@ -1,0 +1,3079 @@
+{
+  "playSession" : {
+    "009863a5-900a-4dd6-bcb1-6bb5821b1296" : {
+      "ageData" : [ [ {
+        "hunger" : 0.78,
+        "military" : 0.78,
+        "population" : 0.239,
+        "science" : 0.56,
+        "security" : 0.6,
+        "time" : 48.49999999999984
+      }, {
+        "hunger" : 0.14,
+        "military" : 0.01,
+        "population" : 0.284,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 29.199999999999562
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "0414a0e7-cf55-40cc-b2c6-def32ac90329" : {
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "07347659-1ff5-4d74-ade2-98302be1c3b6" : {
+      "ageData" : [ [ {
+        "hunger" : 0.34,
+        "military" : 0.18,
+        "population" : 0.209,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 28.899999999999558
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "0ee4afb2-97c3-4372-95f6-45d9652fb1ce" : {
+      "ageData" : [ [ {
+        "hunger" : 0.84,
+        "military" : 0.84,
+        "population" : 0.242,
+        "science" : 0.68,
+        "security" : 0.6,
+        "time" : 51.59999999999988
+      }, {
+        "hunger" : 0.6,
+        "military" : 0.61,
+        "population" : 0.33,
+        "science" : 0.22,
+        "security" : 0.6,
+        "time" : 49.49999999999985
+      }, {
+        "hunger" : 1,
+        "military" : 0.34,
+        "population" : 0.317,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 51.899999999999885
+      }, {
+        "hunger" : 0.92,
+        "military" : 0.76,
+        "population" : 0.113,
+        "science" : 0.14,
+        "security" : 0.6,
+        "time" : 57.39999999999996
+      }, {
+        "hunger" : 0.78,
+        "military" : 0.51,
+        "population" : 0.053,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 54.49999999999992
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "1355814f-bd43-42a7-bb5b-2506bb04d51b" : {
+      "ageData" : [ [ {
+        "hunger" : 0.82,
+        "military" : 0.82,
+        "population" : 0.241,
+        "science" : 0.64,
+        "security" : 0.6,
+        "time" : 50.599999999999866
+      }, {
+        "hunger" : 0.76,
+        "military" : 0.77,
+        "population" : 0.338,
+        "science" : 0.54,
+        "security" : 0.6,
+        "time" : 58.79999999999998
+      }, {
+        "hunger" : 0.72,
+        "military" : 0.74,
+        "population" : 0.337,
+        "science" : 0.66,
+        "security" : 0.6,
+        "time" : 59.19999999999999
+      }, {
+        "hunger" : 0.68,
+        "military" : 1.2,
+        "population" : 0.135,
+        "science" : 0.68,
+        "security" : 0.6,
+        "time" : 59.09999999999999
+      }, {
+        "hunger" : 0.64,
+        "military" : 1.26,
+        "population" : 0.138,
+        "science" : 1,
+        "security" : 0.6,
+        "time" : 59.19999999999999
+      } ], [ {
+        "hunger" : 0.6,
+        "military" : 1.12,
+        "population" : 0.081,
+        "science" : 1.92,
+        "security" : 0.6,
+        "time" : 57.39999999999996
+      }, {
+        "hunger" : 0.68,
+        "military" : 1.2,
+        "population" : 0.13,
+        "science" : 1.9,
+        "security" : 0.6,
+        "time" : 57.39999999999996
+      }, {
+        "hunger" : 0.76,
+        "military" : 1.28,
+        "population" : 0.329,
+        "science" : 2.26,
+        "security" : 0.6,
+        "time" : 60
+      }, {
+        "hunger" : 0.84,
+        "military" : 1.46,
+        "population" : 0.478,
+        "science" : 2.24,
+        "security" : 0.6,
+        "time" : 59.9
+      }, {
+        "hunger" : 0.92,
+        "military" : 1.64,
+        "population" : 0.427,
+        "science" : 2.7,
+        "security" : 0.8,
+        "time" : 60
+      } ], [ {
+        "hunger" : 1.08,
+        "military" : 1.76,
+        "population" : 0.525,
+        "science" : 3.62,
+        "security" : 0.8,
+        "time" : 59.9
+      }, {
+        "hunger" : 1.16,
+        "military" : 1.54,
+        "population" : 0.514,
+        "science" : 3.6,
+        "security" : 0.8,
+        "time" : 60
+      }, {
+        "hunger" : 1.24,
+        "military" : 1.42,
+        "population" : 0.563,
+        "science" : 3.58,
+        "security" : 0.8,
+        "time" : 60
+      }, {
+        "hunger" : 1.32,
+        "military" : 1.5,
+        "population" : 0.512,
+        "science" : 3.94,
+        "security" : 0.8,
+        "time" : 60
+      }, {
+        "hunger" : 1.4,
+        "military" : 1.53,
+        "population" : 0.661,
+        "science" : 4.1,
+        "security" : 0.8,
+        "time" : 59.9
+      } ], [ {
+        "hunger" : 1.56,
+        "military" : 1.53,
+        "population" : 0.659,
+        "science" : 3.6,
+        "security" : 0.8,
+        "time" : 60
+      }, {
+        "hunger" : 1.64,
+        "military" : 1.61,
+        "population" : 0.608,
+        "science" : 4.16,
+        "security" : 0.8,
+        "time" : 59.9
+      }, {
+        "hunger" : 1.72,
+        "military" : 1.49,
+        "population" : 0.632,
+        "science" : 4.92,
+        "security" : 0.6,
+        "time" : 60
+      }, {
+        "hunger" : 1.8,
+        "military" : 1.52,
+        "population" : 0.581,
+        "science" : 5.28,
+        "security" : 0.6,
+        "time" : 60
+      }, {
+        "hunger" : 1.88,
+        "military" : 1.7,
+        "population" : 0.69,
+        "science" : 5.84,
+        "security" : 0.6,
+        "time" : 59.9
+      } ], [ {
+        "hunger" : 2.04,
+        "military" : 1.77,
+        "population" : 0.798,
+        "science" : 6.06,
+        "security" : 0.4,
+        "time" : 60
+      }, {
+        "hunger" : 2.12,
+        "military" : 1.85,
+        "population" : 0.847,
+        "science" : 6.04,
+        "security" : 0.4,
+        "time" : 59.9
+      }, {
+        "hunger" : 2.2,
+        "military" : 1.84,
+        "population" : 0.796,
+        "science" : 6.1,
+        "security" : 0.4,
+        "time" : 60
+      }, {
+        "hunger" : 2.28,
+        "military" : 1.87,
+        "population" : 0.845,
+        "science" : 5.66,
+        "security" : 0.4,
+        "time" : 60
+      }, {
+        "hunger" : 2.36,
+        "military" : 2.1,
+        "population" : 0.854,
+        "science" : 5.52,
+        "security" : 0.4,
+        "time" : 59.9
+      } ], [ {
+        "hunger" : 2.5,
+        "military" : 1.58,
+        "population" : 0,
+        "science" : 5.38,
+        "security" : 0.4,
+        "time" : 59.9
+      } ], [ {
+        "hunger" : 2.5,
+        "military" : 1.58,
+        "population" : 0,
+        "science" : 5.38,
+        "security" : 0.4,
+        "time" : 59.9
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 0
+    },
+    "149b8a26-dbbc-457e-87dd-cd1fdababb47" : {
+      "ageData" : [ [ {
+        "hunger" : 0.76,
+        "military" : 0.76,
+        "population" : 0.238,
+        "science" : 0.52,
+        "security" : 0.6,
+        "time" : 47.29999999999982
+      }, {
+        "hunger" : 0.44,
+        "military" : 0.39,
+        "population" : 0.319,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 45.09999999999979
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "15f6f984-0bf5-4556-a74c-08663702a6cf" : {
+      "ageData" : [ [ {
+        "hunger" : 0.425,
+        "military" : 0.74,
+        "population" : 0.237,
+        "science" : 0.48,
+        "security" : 0.6,
+        "time" : 46.0999999999998
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "1747423a-942a-49c5-b6d2-244c5bf68b40" : {
+      "ageData" : [ [ {
+        "hunger" : 0.6,
+        "military" : 0.88,
+        "population" : 0.244,
+        "science" : 0.76,
+        "security" : 0.6,
+        "time" : 53.0999999999999
+      }, {
+        "hunger" : 0.35,
+        "military" : 0.59,
+        "population" : 0.329,
+        "science" : 0.18,
+        "security" : 0.6,
+        "time" : 46.59999999999981
+      }, {
+        "hunger" : 0.35,
+        "military" : 0.3,
+        "population" : 0.392,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 41.59999999999974
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.5,
+        "population" : 0.153,
+        "science" : 0.1,
+        "security" : 0.8,
+        "time" : 45.29999999999979
+      }, {
+        "hunger" : 0.275,
+        "military" : 0.09,
+        "population" : 0.137,
+        "science" : 0.4,
+        "security" : 0.8,
+        "time" : 49.89999999999986
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "1c35dc1f-b43f-41b8-8c39-b9e571515226" : {
+      "ageData" : [ [ {
+        "hunger" : 0.82,
+        "military" : 0.82,
+        "population" : 0.241,
+        "science" : 0.64,
+        "security" : 0.6,
+        "time" : 50.89999999999987
+      }, {
+        "hunger" : 0.72,
+        "military" : 0.73,
+        "population" : 0.336,
+        "science" : 0.46,
+        "security" : 0.6,
+        "time" : 56.29999999999995
+      }, {
+        "hunger" : 0.06,
+        "military" : 0.3,
+        "population" : 0.374,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 28.499999999999552
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "1df056db-e74d-4bf9-96da-c44b19206010" : {
+      "ageData" : [ [ {
+        "hunger" : 0.5,
+        "military" : 0.8,
+        "population" : 0.191,
+        "science" : 0.6,
+        "security" : 0.6,
+        "time" : 49.29999999999985
+      }, {
+        "hunger" : 0.075,
+        "military" : 0.43,
+        "population" : 0.272,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 44.39999999999978
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "1f54b12e-f45a-4d5c-bf45-e45d6b549185" : {
+      "ageData" : [ [ {
+        "hunger" : 0.6,
+        "military" : 0.88,
+        "population" : 0.195,
+        "science" : 0.76,
+        "security" : 0.6,
+        "time" : 53.299999999999905
+      }, {
+        "hunger" : 0.55,
+        "military" : 0.65,
+        "population" : 0.283,
+        "science" : 0.3,
+        "security" : 0.6,
+        "time" : 49.19999999999985
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.75,
+        "population" : 0.373,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 52.09999999999989
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "2156677c-1710-46ec-b351-8f882b177319" : {
+      "ageData" : [ [ {
+        "hunger" : 0.675,
+        "military" : 0.94,
+        "population" : 0.247,
+        "science" : 0.88,
+        "security" : 0.6,
+        "time" : 56.099999999999945
+      }, {
+        "hunger" : 0.825,
+        "military" : 0.77,
+        "population" : 0.338,
+        "science" : 0.54,
+        "security" : 0.6,
+        "time" : 52.7999999999999
+      }, {
+        "hunger" : 0.7,
+        "military" : 0.68,
+        "population" : 0.334,
+        "science" : 0.54,
+        "security" : 0.6,
+        "time" : 56.29999999999995
+      }, {
+        "hunger" : 0.525,
+        "military" : 1.04,
+        "population" : 0.127,
+        "science" : 0.36,
+        "security" : 0.8,
+        "time" : 54.49999999999992
+      }, {
+        "hunger" : 0.375,
+        "military" : 0.93,
+        "population" : 0.126,
+        "science" : 0.52,
+        "security" : 0.8,
+        "time" : 55.59999999999994
+      } ], [ {
+        "hunger" : 0.35,
+        "military" : 0.7,
+        "population" : 0.05,
+        "science" : 0.28,
+        "security" : 0.8,
+        "time" : 42.099999999999746
+      }, {
+        "hunger" : 0.725,
+        "military" : 0.05,
+        "population" : 0.022,
+        "science" : 0.4,
+        "security" : 1,
+        "time" : 41.59999999999974
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.45,
+        "population" : 0.1,
+        "science" : 0.4,
+        "security" : 1,
+        "time" : 47.79999999999983
+      }, {
+        "hunger" : 0.7,
+        "military" : 0.25,
+        "population" : 0.23,
+        "science" : 0.02,
+        "security" : 1,
+        "time" : 46.899999999999814
+      }, {
+        "hunger" : 0.525,
+        "military" : 0,
+        "population" : 0.267,
+        "science" : 0,
+        "security" : 0.8,
+        "time" : 54.19999999999992
+      } ], [ {
+        "hunger" : 0.85,
+        "military" : 0.3,
+        "population" : 0.214,
+        "science" : 1.02,
+        "security" : 0.8,
+        "time" : 49.19999999999985
+      }, {
+        "hunger" : 0.675,
+        "military" : 0.36,
+        "population" : 0.407,
+        "science" : 0.94,
+        "security" : 0.8,
+        "time" : 54.099999999999916
+      }, {
+        "hunger" : 0.775,
+        "military" : 0.19,
+        "population" : 0.446,
+        "science" : 1.1,
+        "security" : 0.8,
+        "time" : 50.399999999999864
+      }, {
+        "hunger" : 0.625,
+        "military" : 0,
+        "population" : 0.39,
+        "science" : 1.36,
+        "security" : 0.8,
+        "time" : 55.79999999999994
+      }, {
+        "hunger" : 0.85,
+        "military" : 0.01,
+        "population" : 0.468,
+        "science" : 1.66,
+        "security" : 0.8,
+        "time" : 50.89999999999987
+      } ], [ {
+        "hunger" : 0.85,
+        "military" : 0.3,
+        "population" : 0.519,
+        "science" : 1.52,
+        "security" : 0.8,
+        "time" : 51.09999999999987
+      }, {
+        "hunger" : 0.525,
+        "military" : 0.09,
+        "population" : 0.556,
+        "science" : 0.6,
+        "security" : 0.8,
+        "time" : 48.69999999999984
+      }, {
+        "hunger" : 0.9,
+        "military" : 0,
+        "population" : 0.556,
+        "science" : 0.8,
+        "security" : 0.6,
+        "time" : 46.79999999999981
+      }, {
+        "hunger" : 0.675,
+        "military" : 0,
+        "population" : 0.588,
+        "science" : 1.28,
+        "security" : 0.6,
+        "time" : 52.29999999999989
+      }, {
+        "hunger" : 0.35,
+        "military" : 0.2,
+        "population" : 0.672,
+        "science" : 1.4,
+        "security" : 1,
+        "time" : 48.59999999999984
+      } ], [ {
+        "hunger" : 0.675,
+        "military" : 0.05,
+        "population" : 0.739,
+        "science" : 1.62,
+        "security" : 1,
+        "time" : 54.099999999999916
+      }, {
+        "hunger" : 0.525,
+        "military" : 0.05,
+        "population" : 0.78,
+        "science" : 1.4,
+        "security" : 1,
+        "time" : 55.89999999999994
+      }, {
+        "hunger" : 0.825,
+        "military" : 0.01,
+        "population" : 0.707,
+        "science" : 0.98,
+        "security" : 1,
+        "time" : 48.49999999999984
+      }, {
+        "hunger" : 0.625,
+        "military" : 0,
+        "population" : 0.742,
+        "science" : 1.46,
+        "security" : 1,
+        "time" : 52.9999999999999
+      }, {
+        "hunger" : 0.425,
+        "military" : 0.1,
+        "population" : 0.776,
+        "science" : 1.88,
+        "security" : 0.8,
+        "time" : 53.1999999999999
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 0
+    },
+    "247b8819-a58e-4c30-ab75-5f86fb15710e" : {
+      "ageData" : [ [ {
+        "hunger" : 0.94,
+        "military" : 0.94,
+        "population" : 0.247,
+        "science" : 0.88,
+        "security" : 0.6,
+        "time" : 56.99999999999996
+      }, {
+        "hunger" : 0.86,
+        "military" : 0.87,
+        "population" : 0.343,
+        "science" : 0.74,
+        "security" : 0.6,
+        "time" : 57.19999999999996
+      }, {
+        "hunger" : 0.66,
+        "military" : 0.68,
+        "population" : 0.334,
+        "science" : 0.54,
+        "security" : 0.6,
+        "time" : 51.59999999999988
+      }, {
+        "hunger" : 0.54,
+        "military" : 0.46,
+        "population" : 0.228,
+        "science" : 1.3,
+        "security" : 0.8,
+        "time" : 55.499999999999936
+      }, {
+        "hunger" : 0.34,
+        "military" : 0.21,
+        "population" : 0.168,
+        "science" : 0.92,
+        "security" : 0.8,
+        "time" : 51.09999999999987
+      } ], [ {
+        "hunger" : 0.62,
+        "military" : 0.01,
+        "population" : 0.05,
+        "science" : 0.6,
+        "security" : 0.8,
+        "time" : 18.59999999999941
+      }, {
+        "hunger" : 0.6,
+        "military" : 0.05,
+        "population" : 0.005,
+        "science" : 0.4,
+        "security" : 0.8,
+        "time" : 37.39999999999968
+      }, {
+        "hunger" : 0.68,
+        "military" : 0.1,
+        "population" : 0.2,
+        "science" : 0.6,
+        "security" : 0.8,
+        "time" : 56.59999999999995
+      }, {
+        "hunger" : 0.66,
+        "military" : 0.2,
+        "population" : 0.117,
+        "science" : 0.02,
+        "security" : 0.8,
+        "time" : 10.899999999999395
+      }, {
+        "hunger" : 0.64,
+        "military" : 0.2,
+        "population" : 0,
+        "science" : 0.5,
+        "security" : 1,
+        "time" : 35.699999999999655
+      } ], [ {
+        "hunger" : 0.68,
+        "military" : 0.3,
+        "population" : 0.05,
+        "science" : 0.7,
+        "security" : 1,
+        "time" : 22.499999999999467
+      }, {
+        "hunger" : 0.6,
+        "military" : 0.2,
+        "population" : 0.211,
+        "science" : 0.2,
+        "security" : 1,
+        "time" : 37.39999999999968
+      }, {
+        "hunger" : 0.68,
+        "military" : 0.23,
+        "population" : 0.26,
+        "science" : 0.76,
+        "security" : 1,
+        "time" : 37.39999999999968
+      }, {
+        "hunger" : 0.66,
+        "military" : 0.26,
+        "population" : 0.209,
+        "science" : 1.22,
+        "security" : 1,
+        "time" : 60
+      }, {
+        "hunger" : 0.64,
+        "military" : 0.29,
+        "population" : 0.308,
+        "science" : 1.88,
+        "security" : 1,
+        "time" : 60
+      } ], [ {
+        "hunger" : 0.6,
+        "military" : 0.1,
+        "population" : 0.206,
+        "science" : 1.42,
+        "security" : 1,
+        "time" : 59.9
+      }, {
+        "hunger" : 0.68,
+        "military" : 0.38,
+        "population" : 0.355,
+        "science" : 2.18,
+        "security" : 1,
+        "time" : 60
+      }, {
+        "hunger" : 0.66,
+        "military" : 0.56,
+        "population" : 0.304,
+        "science" : 1.94,
+        "security" : 1.2,
+        "time" : 60
+      }, {
+        "hunger" : 0.64,
+        "military" : 0.59,
+        "population" : 0.353,
+        "science" : 2.7,
+        "security" : 1.2,
+        "time" : 60
+      }, {
+        "hunger" : 0.62,
+        "military" : 0.97,
+        "population" : 0.302,
+        "science" : 3.06,
+        "security" : 1.2,
+        "time" : 59.9
+      } ], [ {
+        "hunger" : 0.68,
+        "military" : 0.99,
+        "population" : 0.24,
+        "science" : 4.08,
+        "security" : 1.2,
+        "time" : 60
+      }, {
+        "hunger" : 0.66,
+        "military" : 0.92,
+        "population" : 0.189,
+        "science" : 5.04,
+        "security" : 1,
+        "time" : 60
+      }, {
+        "hunger" : 0.64,
+        "military" : 0.95,
+        "population" : 0.238,
+        "science" : 4.8,
+        "security" : 1,
+        "time" : 59.9
+      }, {
+        "hunger" : 0.62,
+        "military" : 0.98,
+        "population" : 0.287,
+        "science" : 5.56,
+        "security" : 1,
+        "time" : 60
+      }, {
+        "hunger" : 0.6,
+        "military" : 1.06,
+        "population" : 0.336,
+        "science" : 6.22,
+        "security" : 0.8,
+        "time" : 60
+      } ], [ {
+        "hunger" : 0.66,
+        "military" : 1.12,
+        "population" : 0.384,
+        "science" : 7.04,
+        "security" : 0.8,
+        "time" : 60
+      } ], [ {
+        "hunger" : 0.66,
+        "military" : 1.12,
+        "population" : 0.384,
+        "science" : 7.04,
+        "security" : 0.8,
+        "time" : 60
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "2712c27f-2228-4db4-ba7e-976cbf2082db" : {
+      "ageData" : [ [ {
+        "hunger" : 0.04,
+        "military" : 0,
+        "population" : 0.169,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 11.399999999999393
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "2c0c67a9-ff4f-4805-a7dc-4eb949b6b58a" : {
+      "ageData" : [ [ {
+        "hunger" : 0.68,
+        "military" : 0.46,
+        "population" : 0.223,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 33.19999999999962
+      }, {
+        "hunger" : 0.8,
+        "military" : 0.11,
+        "population" : 0.305,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 52.7999999999999
+      }, {
+        "hunger" : 0.7,
+        "military" : 0.3,
+        "population" : 0.395,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 56.099999999999945
+      }, {
+        "hunger" : 0.78,
+        "military" : 0,
+        "population" : 0.271,
+        "science" : 1,
+        "security" : 0.6,
+        "time" : 50.89999999999987
+      }, {
+        "hunger" : 0.66,
+        "military" : 0.1,
+        "population" : 0.264,
+        "science" : 1.2,
+        "security" : 0.6,
+        "time" : 55.399999999999935
+      } ], [ {
+        "hunger" : 0.26,
+        "military" : 0.01,
+        "population" : 0.32,
+        "science" : 1.5,
+        "security" : 0.6,
+        "time" : 16.99999999999939
+      }, {
+        "hunger" : 0.84,
+        "military" : 0.1,
+        "population" : 0.259,
+        "science" : 1.48,
+        "security" : 0.6,
+        "time" : 5.799999999999413
+      }, {
+        "hunger" : 0.44,
+        "military" : 0.4,
+        "population" : 0.304,
+        "science" : 0.68,
+        "security" : 0.6,
+        "time" : 31.8999999999996
+      }, {
+        "hunger" : 0.44,
+        "military" : 0.2,
+        "population" : 0.21,
+        "science" : 0.02,
+        "security" : 0.4,
+        "time" : 1.999999999999417
+      }, {
+        "hunger" : 0.34,
+        "military" : 0.2,
+        "population" : 0.062,
+        "science" : 0.5,
+        "security" : 0.6,
+        "time" : 26.29999999999952
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 0
+    },
+    "39b60fb5-6182-4fa6-a81b-8aeb288ee83e" : {
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "39df512b-58d0-491e-bee2-fb7c62b7865f" : {
+      "ageData" : [ [ {
+        "hunger" : 0.65,
+        "military" : 0.92,
+        "population" : 0.197,
+        "science" : 0.84,
+        "security" : 0.6,
+        "time" : 55.29999999999993
+      }, {
+        "hunger" : 0.525,
+        "military" : 0.83,
+        "population" : 0.292,
+        "science" : 0.66,
+        "security" : 0.6,
+        "time" : 56.099999999999945
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.97,
+        "population" : 0.384,
+        "science" : 0.36,
+        "security" : 0.6,
+        "time" : 53.1999999999999
+      }, {
+        "hunger" : 0,
+        "military" : 0.53,
+        "population" : 0.267,
+        "science" : 1,
+        "security" : 0.8,
+        "time" : 48.399999999999835
+      } ], [ {
+        "hunger" : 0.65,
+        "military" : 0.92,
+        "population" : 0.197,
+        "science" : 0.84,
+        "security" : 0.6,
+        "time" : 55.29999999999993
+      }, {
+        "hunger" : 0.525,
+        "military" : 0.83,
+        "population" : 0.292,
+        "science" : 0.66,
+        "security" : 0.6,
+        "time" : 56.099999999999945
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.97,
+        "population" : 0.384,
+        "science" : 0.36,
+        "security" : 0.6,
+        "time" : 53.1999999999999
+      }, {
+        "hunger" : 0,
+        "military" : 0.53,
+        "population" : 0.267,
+        "science" : 1,
+        "security" : 0.8,
+        "time" : 48.399999999999835
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "3c7371ae-afe5-4d03-b1da-f94cb6965234" : {
+      "ageData" : [ [ {
+        "hunger" : 0.44,
+        "military" : 0.38,
+        "population" : 0.219,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 31.399999999999594
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "3e0dba83-3b17-4b39-a1f4-81d262903e82" : {
+      "ageData" : [ [ {
+        "hunger" : 0,
+        "military" : 0,
+        "population" : 0.163,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 9.099999999999401
+      } ], [ {
+        "hunger" : 0,
+        "military" : 0,
+        "population" : 0.163,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 9.099999999999401
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "3e674164-b0c4-4ccd-ba40-189d61268de3" : {
+      "ageData" : [ [ {
+        "hunger" : 0.575,
+        "military" : 0.86,
+        "population" : 0.194,
+        "science" : 0.72,
+        "security" : 0.6,
+        "time" : 52.699999999999896
+      }, {
+        "hunger" : 0.375,
+        "military" : 0.71,
+        "population" : 0.286,
+        "science" : 0.42,
+        "security" : 0.6,
+        "time" : 53.59999999999991
+      }, {
+        "hunger" : 0.225,
+        "military" : 0.89,
+        "population" : 0.38,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 55.399999999999935
+      }, {
+        "hunger" : 0.075,
+        "military" : 1.25,
+        "population" : 0.173,
+        "science" : 0.1,
+        "security" : 0.6,
+        "time" : 55.59999999999994
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "49f910af-bf7c-4d20-8e50-7e25e104821f" : {
+      "ageData" : [ [ {
+        "hunger" : 0.225,
+        "military" : 0.58,
+        "population" : 0.229,
+        "science" : 0.16,
+        "security" : 0.6,
+        "time" : 38.7999999999997
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "50647d09-be91-4713-ab19-fb5b365d7e6b" : {
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "54992220-1b95-4f62-a243-440c73a30b82" : {
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "5bfff6e4-3630-4d28-836c-c7e4bb60c450" : {
+      "ageData" : [ [ {
+        "hunger" : 0.94,
+        "military" : 0.94,
+        "population" : 0.247,
+        "science" : 0.88,
+        "security" : 0.6,
+        "time" : 56.29999999999995
+      }, {
+        "hunger" : 0.8,
+        "military" : 0.81,
+        "population" : 0.34,
+        "science" : 0.62,
+        "security" : 0.6,
+        "time" : 54.699999999999925
+      }, {
+        "hunger" : 0.36,
+        "military" : 0.55,
+        "population" : 0.412,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 39.59999999999971
+      }, {
+        "hunger" : 0.64,
+        "military" : 0.83,
+        "population" : 0.201,
+        "science" : 0.1,
+        "security" : 0.6,
+        "time" : 55.79999999999994
+      }, {
+        "hunger" : 0.56,
+        "military" : 0.68,
+        "population" : 0.146,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 57.29999999999996
+      } ], [ {
+        "hunger" : 0.24,
+        "military" : 0.3,
+        "population" : 0.192,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 30.899999999999586
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.05,
+        "population" : 0.086,
+        "science" : 0.4,
+        "security" : 0.6,
+        "time" : 19.399999999999423
+      }, {
+        "hunger" : 0.16,
+        "military" : 0.4,
+        "population" : 0.1,
+        "science" : 0.4,
+        "security" : 0.6,
+        "time" : 11.599999999999392
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "5ee653b9-e713-4e36-82b5-d6dcf3f6d92a" : {
+      "ageData" : [ [ {
+        "hunger" : 0.54,
+        "military" : 0.54,
+        "population" : 0.227,
+        "science" : 0.08,
+        "security" : 0.6,
+        "time" : 36.29999999999966
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "63235804-d900-46fc-9b69-869863039878" : {
+      "ageData" : [ [ {
+        "hunger" : 0,
+        "military" : 0.1,
+        "population" : 0.205,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 24.8999999999995
+      } ], [ {
+        "hunger" : 0,
+        "military" : 0.1,
+        "population" : 0.205,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 24.8999999999995
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "643b2249-3dc2-4d02-ae84-b99421de4205" : {
+      "ageData" : [ [ {
+        "hunger" : 0.78,
+        "military" : 0.78,
+        "population" : 0.239,
+        "science" : 0.56,
+        "security" : 0.6,
+        "time" : 48.89999999999984
+      }, {
+        "hunger" : 0.62,
+        "military" : 0.63,
+        "population" : 0.331,
+        "science" : 0.26,
+        "security" : 0.6,
+        "time" : 53.999999999999915
+      }, {
+        "hunger" : 0.5,
+        "military" : 0.81,
+        "population" : 0.425,
+        "science" : 0.04,
+        "security" : 0.6,
+        "time" : 55.09999999999993
+      }, {
+        "hunger" : 0.34,
+        "military" : 1.01,
+        "population" : 0.21,
+        "science" : 0.1,
+        "security" : 0.6,
+        "time" : 53.79999999999991
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.89,
+        "population" : 0.204,
+        "science" : 0.4,
+        "security" : 0.6,
+        "time" : 54.099999999999916
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "6827d031-d358-4a9c-b194-26e9c4a096c9" : {
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "6a6e026f-bd73-426b-875b-6398095be32f" : {
+      "ageData" : [ [ {
+        "hunger" : 0.65,
+        "military" : 0.92,
+        "population" : 0.246,
+        "science" : 0.84,
+        "security" : 0.6,
+        "time" : 55.29999999999993
+      }, {
+        "hunger" : 0.55,
+        "military" : 0.75,
+        "population" : 0.337,
+        "science" : 0.5,
+        "security" : 0.6,
+        "time" : 52.39999999999989
+      }, {
+        "hunger" : 0.4,
+        "military" : 0.93,
+        "population" : 0.431,
+        "science" : 0.28,
+        "security" : 0.6,
+        "time" : 54.99999999999993
+      }, {
+        "hunger" : 0.55,
+        "military" : 1.01,
+        "population" : 0.21,
+        "science" : 0.1,
+        "security" : 0.8,
+        "time" : 47.39999999999982
+      }, {
+        "hunger" : 0.375,
+        "military" : 0.74,
+        "population" : 0.149,
+        "science" : 0.02,
+        "security" : 0.8,
+        "time" : 54.799999999999926
+      } ], [ {
+        "hunger" : 0.1,
+        "military" : 0.3,
+        "population" : 0.05,
+        "science" : 0.2,
+        "security" : 1,
+        "time" : 16.699999999999385
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "6cdd4e0c-b4ee-4614-a126-fe8712a1f607" : {
+      "ageData" : [ [ {
+        "hunger" : 0.34,
+        "military" : 0,
+        "population" : 0.154,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 6.199999999999411
+      }, {
+        "hunger" : 0.46,
+        "military" : 0.01,
+        "population" : 0.197,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 42.099999999999746
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.01,
+        "population" : 0.122,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 35.99999999999966
+      }, {
+        "hunger" : 0.56,
+        "military" : 0,
+        "population" : 0,
+        "science" : 1,
+        "security" : 0.8,
+        "time" : 10.799999999999395
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.1,
+        "population" : 0.005,
+        "science" : 0.72,
+        "security" : 0.8,
+        "time" : 43.29999999999976
+      } ], [ {
+        "hunger" : 0.5,
+        "military" : 0.01,
+        "population" : 0.109,
+        "science" : 0.6,
+        "security" : 0.8,
+        "time" : 47.699999999999825
+      }, {
+        "hunger" : 0.62,
+        "military" : 0.05,
+        "population" : 0.067,
+        "science" : 0.96,
+        "security" : 0.8,
+        "time" : 37.69999999999968
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "7350dbf1-9efd-4e27-8764-dba3dd77cbea" : {
+      "ageData" : [ [ {
+        "hunger" : 0.25,
+        "military" : 0.6,
+        "population" : 0.23,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 39.49999999999971
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "75d3061b-bdf1-4d2d-a98c-76c779d0564c" : {
+      "ageData" : [ [ {
+        "hunger" : 0.575,
+        "military" : 0.86,
+        "population" : 0.243,
+        "science" : 0.72,
+        "security" : 0.6,
+        "time" : 52.39999999999989
+      }, {
+        "hunger" : 0.35,
+        "military" : 0.69,
+        "population" : 0.334,
+        "science" : 0.38,
+        "security" : 0.6,
+        "time" : 52.8999999999999
+      }, {
+        "hunger" : 0.35,
+        "military" : 0.3,
+        "population" : 0.315,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 46.79999999999981
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.5,
+        "population" : 0.082,
+        "science" : 0.1,
+        "security" : 0.8,
+        "time" : 45.8999999999998
+      }, {
+        "hunger" : 0.375,
+        "military" : 0,
+        "population" : 0.009,
+        "science" : 0.02,
+        "security" : 0.8,
+        "time" : 49.099999999999845
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "797355f7-edc8-44d3-9e43-feed0c46a78e" : {
+      "ageData" : [ [ {
+        "hunger" : 0.94,
+        "military" : 0.94,
+        "population" : 0.247,
+        "science" : 0.88,
+        "security" : 0.6,
+        "time" : 56.799999999999955
+      }, {
+        "hunger" : 0.86,
+        "military" : 0.87,
+        "population" : 0.343,
+        "science" : 0.74,
+        "security" : 0.6,
+        "time" : 57.09999999999996
+      }, {
+        "hunger" : 0.7,
+        "military" : 0.72,
+        "population" : 0.336,
+        "science" : 0.62,
+        "security" : 0.6,
+        "time" : 53.49999999999991
+      }, {
+        "hunger" : 0.62,
+        "military" : 1.14,
+        "population" : 0.132,
+        "science" : 0.56,
+        "security" : 0.6,
+        "time" : 57.09999999999996
+      }, {
+        "hunger" : 0.8,
+        "military" : 0.33,
+        "population" : 0.044,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 35.29999999999965
+      } ], [ {
+        "hunger" : 0.52,
+        "military" : 0.01,
+        "population" : 0.118,
+        "science" : 0.6,
+        "security" : 0.6,
+        "time" : 48.399999999999835
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "7e2a4e97-f548-4575-b697-8105fa3213ff" : {
+      "ageData" : [ [ {
+        "hunger" : 0,
+        "military" : 0,
+        "population" : 0.163,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 9.999999999999398
+      } ], [ {
+        "hunger" : 0,
+        "military" : 0,
+        "population" : 0.163,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 9.999999999999398
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "803f9136-d124-49f0-9343-8d6eb5ff5b25" : {
+      "ageData" : [ [ {
+        "hunger" : 0.9,
+        "military" : 0.9,
+        "population" : 0.245,
+        "science" : 0.8,
+        "security" : 0.6,
+        "time" : 54.59999999999992
+      }, {
+        "hunger" : 0.8,
+        "military" : 0.81,
+        "population" : 0.34,
+        "science" : 0.62,
+        "security" : 0.6,
+        "time" : 56.39999999999995
+      }, {
+        "hunger" : 0.7,
+        "military" : 1.01,
+        "population" : 0.435,
+        "science" : 0.44,
+        "security" : 0.6,
+        "time" : 56.899999999999956
+      }, {
+        "hunger" : 0.56,
+        "military" : 0.77,
+        "population" : 0.328,
+        "science" : 1.16,
+        "security" : 0.6,
+        "time" : 54.59999999999992
+      }, {
+        "hunger" : 0.44,
+        "military" : 0.66,
+        "population" : 0.327,
+        "science" : 1.32,
+        "security" : 0.6,
+        "time" : 55.399999999999935
+      } ], [ {
+        "hunger" : 0.72,
+        "military" : 0.36,
+        "population" : 0.461,
+        "science" : 1.26,
+        "security" : 0.6,
+        "time" : 52.29999999999989
+      }, {
+        "hunger" : 0.6,
+        "military" : 0.25,
+        "population" : 0.46,
+        "science" : 1.42,
+        "security" : 0.6,
+        "time" : 55.29999999999993
+      }, {
+        "hunger" : 0.46,
+        "military" : 0.12,
+        "population" : 0.653,
+        "science" : 1.54,
+        "security" : 0.6,
+        "time" : 54.89999999999993
+      }, {
+        "hunger" : 0.54,
+        "military" : 0.2,
+        "population" : 0.777,
+        "science" : 0.92,
+        "security" : 0.6,
+        "time" : 45.09999999999979
+      }, {
+        "hunger" : 0.7,
+        "military" : 0,
+        "population" : 0.803,
+        "science" : 0,
+        "security" : 0.4,
+        "time" : 44.799999999999784
+      } ], [ {
+        "hunger" : 0.8,
+        "military" : 0.3,
+        "population" : 0.754,
+        "science" : 1.1,
+        "security" : 0.4,
+        "time" : 51.49999999999988
+      }, {
+        "hunger" : 0.68,
+        "military" : 0.38,
+        "population" : 0.948,
+        "science" : 1.06,
+        "security" : 0.4,
+        "time" : 55.19999999999993
+      }, {
+        "hunger" : 0.5,
+        "military" : 0.25,
+        "population" : 0.989,
+        "science" : 1.3,
+        "security" : 0.4,
+        "time" : 52.8999999999999
+      }, {
+        "hunger" : 0.7,
+        "military" : 0,
+        "population" : 0.922,
+        "science" : 1.2,
+        "security" : 0.4,
+        "time" : 46.39999999999981
+      }, {
+        "hunger" : 0.5,
+        "military" : 0.01,
+        "population" : 1.002,
+        "science" : 1.54,
+        "security" : 0.4,
+        "time" : 51.69999999999988
+      } ], [ {
+        "hunger" : 0.54,
+        "military" : 0.1,
+        "population" : 0.857,
+        "science" : 1.24,
+        "security" : 0.4,
+        "time" : 51.199999999999875
+      }, {
+        "hunger" : 0.34,
+        "military" : 0.05,
+        "population" : 0.892,
+        "science" : 0.44,
+        "security" : 0.4,
+        "time" : 51.59999999999988
+      }, {
+        "hunger" : 0.76,
+        "military" : 0,
+        "population" : 0.889,
+        "science" : 0.8,
+        "security" : 0.2,
+        "time" : 47.19999999999982
+      }, {
+        "hunger" : 0.58,
+        "military" : 0,
+        "population" : 0.921,
+        "science" : 1.28,
+        "security" : 0.2,
+        "time" : 52.49999999999989
+      }, {
+        "hunger" : 0.46,
+        "military" : 0.2,
+        "population" : 1.019,
+        "science" : 1.68,
+        "security" : 0.2,
+        "time" : 55.399999999999935
+      } ], [ {
+        "hunger" : 0.82,
+        "military" : 0.05,
+        "population" : 1.046,
+        "science" : 1.1,
+        "security" : 0.2,
+        "time" : 33.29999999999962
+      }, {
+        "hunger" : 0.7,
+        "military" : 0.05,
+        "population" : 1.087,
+        "science" : 0.88,
+        "security" : 0.2,
+        "time" : 55.29999999999993
+      }, {
+        "hunger" : 0.5,
+        "military" : 0.01,
+        "population" : 1.02,
+        "science" : 0.58,
+        "security" : 0.2,
+        "time" : 51.49999999999988
+      }, {
+        "hunger" : 0.76,
+        "military" : 0,
+        "population" : 1.047,
+        "science" : 0.9,
+        "security" : 0.2,
+        "time" : 49.89999999999986
+      }, {
+        "hunger" : 0.48,
+        "military" : 0.1,
+        "population" : 1.069,
+        "science" : 1.08,
+        "security" : 0,
+        "time" : 47.29999999999982
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "8c577227-76e3-42ac-a117-873131e8e2ef" : {
+      "ageData" : [ [ {
+        "hunger" : 0.9,
+        "military" : 0.9,
+        "population" : 0.245,
+        "science" : 0.8,
+        "security" : 0.6,
+        "time" : 54.099999999999916
+      }, {
+        "hunger" : 0.42,
+        "military" : 0.15,
+        "population" : 0.307,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 32.899999999999615
+      }, {
+        "hunger" : 0.36,
+        "military" : 0.3,
+        "population" : 0.359,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 43.99999999999977
+      }, {
+        "hunger" : 0.34,
+        "military" : 0,
+        "population" : 0.205,
+        "science" : 1,
+        "security" : 0.6,
+        "time" : 40.89999999999973
+      }, {
+        "hunger" : 0.36,
+        "military" : 0.01,
+        "population" : 0.172,
+        "science" : 0.68,
+        "security" : 0.6,
+        "time" : 42.099999999999746
+      } ], [ {
+        "hunger" : 0.26,
+        "military" : 0.01,
+        "population" : 0.161,
+        "science" : 0.6,
+        "security" : 0.6,
+        "time" : 18.199999999999406
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.01,
+        "population" : 0.135,
+        "science" : 0.96,
+        "security" : 0.6,
+        "time" : 45.29999999999979
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.01,
+        "population" : 0.292,
+        "science" : 1.32,
+        "security" : 0.6,
+        "time" : 38.9999999999997
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.2,
+        "population" : 0.397,
+        "science" : 1.3,
+        "security" : 0.6,
+        "time" : 38.8999999999997
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.05,
+        "population" : 0.335,
+        "science" : 1.36,
+        "security" : 0.8,
+        "time" : 50.69999999999987
+      } ], [ {
+        "hunger" : 0.22,
+        "military" : 0.3,
+        "population" : 0.213,
+        "science" : 0.7,
+        "security" : 0.8,
+        "time" : 20.399999999999437
+      }, {
+        "hunger" : 0.26,
+        "military" : 0.24,
+        "population" : 0.4,
+        "science" : 0.38,
+        "security" : 0.8,
+        "time" : 48.79999999999984
+      }, {
+        "hunger" : 0.28,
+        "military" : 0.11,
+        "population" : 0.441,
+        "science" : 0.62,
+        "security" : 0.8,
+        "time" : 52.8999999999999
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.1,
+        "population" : 0.314,
+        "science" : 0.4,
+        "security" : 0.8,
+        "time" : 28.599999999999554
+      }, {
+        "hunger" : 0.26,
+        "military" : 0.01,
+        "population" : 0.375,
+        "science" : 0.7,
+        "security" : 0.8,
+        "time" : 43.79999999999977
+      } ], [ {
+        "hunger" : 0.22,
+        "military" : 0.05,
+        "population" : 0.093,
+        "science" : 0,
+        "security" : 0.8,
+        "time" : 8.799999999999402
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.3,
+        "population" : 0.2,
+        "science" : 0.8,
+        "security" : 0.8,
+        "time" : 46.49999999999981
+      }, {
+        "hunger" : 0.26,
+        "military" : 0,
+        "population" : 0.191,
+        "science" : 0.8,
+        "security" : 0.6,
+        "time" : 38.29999999999969
+      }, {
+        "hunger" : 0.66,
+        "military" : 0,
+        "population" : 0.187,
+        "science" : 0.8,
+        "security" : 1,
+        "time" : 36.09999999999966
+      }, {
+        "hunger" : 0.52,
+        "military" : 0.4,
+        "population" : 0.123,
+        "science" : 0.96,
+        "security" : 1,
+        "time" : 54.59999999999992
+      } ], [ {
+        "hunger" : 0.28,
+        "military" : 0.05,
+        "population" : 0.06,
+        "science" : 0.58,
+        "security" : 0.8,
+        "time" : 50.79999999999987
+      }, {
+        "hunger" : 0.28,
+        "military" : 0,
+        "population" : 0,
+        "science" : 1.18,
+        "security" : 0.6,
+        "time" : 51.09999999999987
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.05,
+        "population" : 0.05,
+        "science" : 0.46,
+        "security" : 0.6,
+        "time" : 47.99999999999983
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.01,
+        "population" : 0.081,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 50.499999999999865
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.1,
+        "population" : 0.105,
+        "science" : 0.7,
+        "security" : 0.4,
+        "time" : 52.39999999999989
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 4
+    },
+    "9b687c9c-2d83-405c-b1da-eecf3af00b8c" : {
+      "ageData" : [ [ {
+        "hunger" : 0.04,
+        "military" : 0,
+        "population" : 0.169,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 11.899999999999391
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "9ccd9a1b-4ba1-43d6-bcfa-c4239da9addb" : {
+      "ageData" : [ [ {
+        "hunger" : 0.52,
+        "military" : 0.52,
+        "population" : 0.226,
+        "science" : 0.04,
+        "security" : 0.6,
+        "time" : 35.29999999999965
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "9f6c9c97-d6f8-421d-b25f-99f01a2e2fc9" : {
+      "ageData" : [ [ {
+        "hunger" : 0.72,
+        "military" : 0.72,
+        "population" : 0.236,
+        "science" : 0.44,
+        "security" : 0.6,
+        "time" : 45.599999999999795
+      }, {
+        "hunger" : 0.4,
+        "military" : 0.31,
+        "population" : 0.315,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 45.9999999999998
+      }, {
+        "hunger" : 0.14,
+        "military" : 0.3,
+        "population" : 0.386,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 48.19999999999983
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "a1f6eb76-fb0f-49fa-96e1-5000a5c77f85" : {
+      "ageData" : [ [ {
+        "hunger" : 0.72,
+        "military" : 0.72,
+        "population" : 0.236,
+        "science" : 0.44,
+        "security" : 0.6,
+        "time" : 45.499999999999794
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "af2dbdf7-18b1-4a97-b16f-518e129bff92" : {
+      "ageData" : [ [ {
+        "hunger" : 0.5,
+        "military" : 0.8,
+        "population" : 0.24,
+        "science" : 0.6,
+        "security" : 0.6,
+        "time" : 49.29999999999985
+      }, {
+        "hunger" : 0.1,
+        "military" : 0.27,
+        "population" : 0.313,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 41.399999999999736
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "af85666b-5aed-4587-9dec-d203d36001a0" : {
+      "ageData" : [ [ {
+        "hunger" : 0.78,
+        "military" : 0.78,
+        "population" : 0.239,
+        "science" : 0.56,
+        "security" : 0.6,
+        "time" : 48.299999999999834
+      }, {
+        "hunger" : 0.34,
+        "military" : 0.19,
+        "population" : 0.309,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 39.299999999999706
+      }, {
+        "hunger" : 0.14,
+        "military" : 0.3,
+        "population" : 0.386,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 51.79999999999988
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "b1f3482d-8172-4b5e-a86b-568889b38dfa" : {
+      "ageData" : [ [ {
+        "hunger" : 0.325,
+        "military" : 0.22,
+        "population" : 0.211,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 27.299999999999535
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 2
+    },
+    "b3ccfe3e-67b0-4999-81dd-af0a45cb4eae" : {
+      "ageData" : [ [ {
+        "hunger" : 0.4,
+        "military" : 0.3,
+        "population" : 0.215,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 30.099999999999575
+      }, {
+        "hunger" : 0.3,
+        "military" : 0.01,
+        "population" : 0.233,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 31.499999999999595
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.3,
+        "population" : 0.326,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 58.59999999999998
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.14,
+        "population" : 0.223,
+        "science" : 1,
+        "security" : 0.6,
+        "time" : 58.999999999999986
+      }, {
+        "hunger" : 0.16,
+        "military" : 0.05,
+        "population" : 0.171,
+        "science" : 0.94,
+        "security" : 0.6,
+        "time" : 59.39999999999999
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 2
+    },
+    "b5f38fd2-b98d-4e6d-9965-fdf5a831d943" : {
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "b7c5511b-d37e-4a30-a4f4-99e89ac7001f" : {
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "bd36f52c-b907-48ba-8bd5-06b762f16ffc" : {
+      "ageData" : [ [ {
+        "hunger" : 0.82,
+        "military" : 0.82,
+        "population" : 0.241,
+        "science" : 0.64,
+        "security" : 0.6,
+        "time" : 50.19999999999986
+      }, {
+        "hunger" : 0.96,
+        "military" : 0.43,
+        "population" : 0.321,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 43.89999999999977
+      }, {
+        "hunger" : 0.7,
+        "military" : 0.3,
+        "population" : 0.395,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 48.79999999999984
+      }, {
+        "hunger" : 0.84,
+        "military" : 0,
+        "population" : 0.22,
+        "science" : 1,
+        "security" : 0.8,
+        "time" : 33.39999999999962
+      }, {
+        "hunger" : 1,
+        "military" : 0.1,
+        "population" : 0.201,
+        "science" : 0.96,
+        "security" : 0.8,
+        "time" : 49.89999999999986
+      } ], [ {
+        "hunger" : 0.2,
+        "military" : 0.01,
+        "population" : 0.261,
+        "science" : 0.6,
+        "security" : 1,
+        "time" : 26.89999999999953
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.05,
+        "population" : 0.249,
+        "science" : 0.64,
+        "security" : 1,
+        "time" : 52.599999999999895
+      }, {
+        "hunger" : 0.26,
+        "military" : 0.1,
+        "population" : 0.436,
+        "science" : 0.72,
+        "security" : 1,
+        "time" : 53.89999999999991
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.2,
+        "population" : 0.567,
+        "science" : 0.26,
+        "security" : 1,
+        "time" : 48.999999999999844
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.2,
+        "population" : 0.461,
+        "science" : 0.5,
+        "security" : 1.2,
+        "time" : 37.899999999999686
+      } ], [ {
+        "hunger" : 0.2,
+        "military" : 0.3,
+        "population" : 0.381,
+        "science" : 0.9,
+        "security" : 1.2,
+        "time" : 46.999999999999815
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.2,
+        "population" : 0.49,
+        "science" : 0.2,
+        "security" : 1.2,
+        "time" : 18.59999999999941
+      }, {
+        "hunger" : 0.28,
+        "military" : 0.05,
+        "population" : 0.499,
+        "science" : 0.6,
+        "security" : 1.2,
+        "time" : 42.99999999999976
+      }, {
+        "hunger" : 0.26,
+        "military" : 0.05,
+        "population" : 0.43,
+        "science" : 0.66,
+        "security" : 1.2,
+        "time" : 49.99999999999986
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.05,
+        "population" : 0.472,
+        "science" : 0.7,
+        "security" : 1.2,
+        "time" : 34.999999999999645
+      } ], [ {
+        "hunger" : 0.26,
+        "military" : 0.05,
+        "population" : 0.331,
+        "science" : 0,
+        "security" : 1.2,
+        "time" : 29.69999999999957
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.3,
+        "population" : 0.429,
+        "science" : 0.8,
+        "security" : 1.2,
+        "time" : 43.09999999999976
+      }, {
+        "hunger" : 0.22,
+        "military" : 0,
+        "population" : 0.417,
+        "science" : 0.8,
+        "security" : 1,
+        "time" : 37.39999999999968
+      }, {
+        "hunger" : 0.28,
+        "military" : 0.05,
+        "population" : 0.377,
+        "science" : 0.8,
+        "security" : 1,
+        "time" : 24.999999999999503
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.2,
+        "population" : 0.454,
+        "science" : 0.68,
+        "security" : 1,
+        "time" : 43.89999999999977
+      } ], [ {
+        "hunger" : 0.2,
+        "military" : 0.05,
+        "population" : 0.439,
+        "science" : 0.7,
+        "security" : 1,
+        "time" : 31.999999999999602
+      }, {
+        "hunger" : 0.24,
+        "military" : 0,
+        "population" : 0.326,
+        "science" : 1,
+        "security" : 0.8,
+        "time" : 33.39999999999962
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.05,
+        "population" : 0.309,
+        "science" : 0,
+        "security" : 1,
+        "time" : 30.899999999999586
+      }, {
+        "hunger" : 0.28,
+        "military" : 0.05,
+        "population" : 0.295,
+        "science" : 0.8,
+        "security" : 1,
+        "time" : 39.69999999999971
+      }, {
+        "hunger" : 0.26,
+        "military" : 0.1,
+        "population" : 0.316,
+        "science" : 0.86,
+        "security" : 0.8,
+        "time" : 45.09999999999979
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 2
+    },
+    "c54681c6-d304-4dde-96ff-a3e33dd0df96" : {
+      "ageData" : [ [ {
+        "hunger" : 0.88,
+        "military" : 0.88,
+        "population" : 0.244,
+        "science" : 0.76,
+        "security" : 0.6,
+        "time" : 53.79999999999991
+      }, {
+        "hunger" : 0.72,
+        "military" : 0.73,
+        "population" : 0.336,
+        "science" : 0.46,
+        "security" : 0.6,
+        "time" : 53.69999999999991
+      }, {
+        "hunger" : 0.36,
+        "military" : 0.55,
+        "population" : 0.412,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 43.19999999999976
+      }, {
+        "hunger" : 0.18,
+        "military" : 0.71,
+        "population" : 0.195,
+        "science" : 0.1,
+        "security" : 0.6,
+        "time" : 52.39999999999989
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "c68247d0-2669-4756-a36f-faa9a9119906" : {
+      "ageData" : [ [ {
+        "hunger" : 0.4,
+        "military" : 0.3,
+        "population" : 0.215,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 29.399999999999565
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "c7a7b051-73e9-4e73-8473-d0ba40331dd8" : {
+      "ageData" : [ [ {
+        "hunger" : 0.65,
+        "military" : 0.92,
+        "population" : 0.246,
+        "science" : 0.84,
+        "security" : 0.6,
+        "time" : 55.09999999999993
+      }, {
+        "hunger" : 0.35,
+        "military" : 0.69,
+        "population" : 0.334,
+        "science" : 0.38,
+        "security" : 0.6,
+        "time" : 49.099999999999845
+      }, {
+        "hunger" : 0.1,
+        "military" : 0.79,
+        "population" : 0.424,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 51.299999999999876
+      }, {
+        "hunger" : 0.7,
+        "military" : 0.87,
+        "population" : 0.203,
+        "science" : 0.1,
+        "security" : 0.6,
+        "time" : 50.29999999999986
+      }, {
+        "hunger" : 0.5,
+        "military" : 0.22,
+        "population" : 0.175,
+        "science" : 0.4,
+        "security" : 0.6,
+        "time" : 42.99999999999976
+      } ], [ {
+        "hunger" : 0.3,
+        "military" : 0.01,
+        "population" : 0.005,
+        "science" : 1.2,
+        "security" : 0.8,
+        "time" : 44.59999999999978
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.01,
+        "population" : 0,
+        "science" : 1.56,
+        "security" : 0.8,
+        "time" : 50.69999999999987
+      }, {
+        "hunger" : 0.275,
+        "military" : 0.46,
+        "population" : 0.005,
+        "science" : 1.96,
+        "security" : 0.8,
+        "time" : 45.499999999999794
+      }, {
+        "hunger" : 0.25,
+        "military" : 0.4,
+        "population" : 0,
+        "science" : 1.46,
+        "security" : 0.6,
+        "time" : 48.69999999999984
+      }, {
+        "hunger" : 0.275,
+        "military" : 0.23,
+        "population" : 0,
+        "science" : 1.52,
+        "security" : 0.8,
+        "time" : 49.49999999999985
+      } ], [ {
+        "hunger" : 0.275,
+        "military" : 0.3,
+        "population" : 0.005,
+        "science" : 1.9,
+        "security" : 0.8,
+        "time" : 50.79999999999987
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.32,
+        "population" : 0.2,
+        "science" : 1.74,
+        "security" : 0.8,
+        "time" : 52.8999999999999
+      }, {
+        "hunger" : 0.275,
+        "military" : 0.13,
+        "population" : 0.189,
+        "science" : 1.86,
+        "security" : 0.8,
+        "time" : 49.59999999999985
+      }, {
+        "hunger" : 0.25,
+        "military" : 0.1,
+        "population" : 0.124,
+        "science" : 1.82,
+        "security" : 0.8,
+        "time" : 50.599999999999866
+      }, {
+        "hunger" : 0.3,
+        "military" : 0.01,
+        "population" : 0.203,
+        "science" : 2,
+        "security" : 0.8,
+        "time" : 48.49999999999984
+      } ], [ {
+        "hunger" : 0.25,
+        "military" : 0.1,
+        "population" : 0,
+        "science" : 0.98,
+        "security" : 0.8,
+        "time" : 43.79999999999977
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.05,
+        "population" : 0.005,
+        "science" : 0,
+        "security" : 0.8,
+        "time" : 40.19999999999972
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.2,
+        "population" : 0,
+        "science" : 0,
+        "security" : 1,
+        "time" : 42.39999999999975
+      }, {
+        "hunger" : 0.275,
+        "military" : 0,
+        "population" : 0.05,
+        "science" : 0.8,
+        "security" : 1,
+        "time" : 45.19999999999979
+      }, {
+        "hunger" : 0.3,
+        "military" : 0.2,
+        "population" : 0.142,
+        "science" : 1.08,
+        "security" : 1,
+        "time" : 52.09999999999989
+      } ], [ {
+        "hunger" : 0.35,
+        "military" : 0.05,
+        "population" : 0,
+        "science" : 0.98,
+        "security" : 1,
+        "time" : 39.999999999999716
+      }, {
+        "hunger" : 0.25,
+        "military" : 0,
+        "population" : 0,
+        "science" : 1.74,
+        "security" : 0.8,
+        "time" : 54.19999999999992
+      }, {
+        "hunger" : 0.3,
+        "military" : 0.01,
+        "population" : 0,
+        "science" : 1.32,
+        "security" : 0.8,
+        "time" : 47.699999999999825
+      }, {
+        "hunger" : 0.35,
+        "military" : 0,
+        "population" : 0.05,
+        "science" : 1.8,
+        "security" : 0.8,
+        "time" : 52.599999999999895
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.1,
+        "population" : 0.029,
+        "science" : 2.1,
+        "security" : 0.6,
+        "time" : 50.599999999999866
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "c9d53222-f375-4f1f-ad55-7378744c32e5" : {
+      "ageData" : [ [ {
+        "hunger" : 0.94,
+        "military" : 0.94,
+        "population" : 0.247,
+        "science" : 0.88,
+        "security" : 0.6,
+        "time" : 56.49999999999995
+      }, {
+        "hunger" : 0.82,
+        "military" : 0.83,
+        "population" : 0.341,
+        "science" : 0.66,
+        "security" : 0.6,
+        "time" : 55.19999999999993
+      }, {
+        "hunger" : 0.5,
+        "military" : 0.01,
+        "population" : 0.206,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 60
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.5,
+        "population" : 0,
+        "science" : 0.1,
+        "security" : 0.6,
+        "time" : 46.199999999999804
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 1
+    },
+    "cbb7877b-8e3d-4f18-bf68-922dbdf9a6d7" : {
+      "ageData" : [ [ {
+        "hunger" : 0.62,
+        "military" : 0.62,
+        "population" : 0.231,
+        "science" : 0.24,
+        "security" : 0.6,
+        "time" : 40.49999999999972
+      }, {
+        "hunger" : 0.04,
+        "military" : 0.01,
+        "population" : 0.269,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 31.999999999999602
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 1
+    },
+    "ceee8519-fa9a-4796-9fa0-d14f41a0e943" : {
+      "ageData" : [ [ {
+        "hunger" : 0.94,
+        "military" : 0.94,
+        "population" : 0.247,
+        "science" : 0.88,
+        "security" : 0.6,
+        "time" : 56.99999999999996
+      }, {
+        "hunger" : 0.84,
+        "military" : 0.85,
+        "population" : 0.342,
+        "science" : 0.7,
+        "security" : 0.6,
+        "time" : 56.29999999999995
+      }, {
+        "hunger" : 0.72,
+        "military" : 0.74,
+        "population" : 0.337,
+        "science" : 0.66,
+        "security" : 0.6,
+        "time" : 55.09999999999993
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "d7081982-24b7-43f1-bedc-05b75725d0e5" : {
+      "ageData" : [ [ {
+        "hunger" : 0.6,
+        "military" : 0.88,
+        "population" : 0.244,
+        "science" : 0.76,
+        "security" : 0.6,
+        "time" : 53.1999999999999
+      }, {
+        "hunger" : 0.425,
+        "military" : 0.65,
+        "population" : 0.332,
+        "science" : 0.3,
+        "security" : 0.6,
+        "time" : 49.19999999999985
+      }, {
+        "hunger" : 0.1,
+        "military" : 0.3,
+        "population" : 0.315,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 48.09999999999983
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "d8cc4bea-36b9-4fa3-9c71-59c4c0d7a493" : {
+      "ageData" : [ [ {
+        "hunger" : 0.9,
+        "military" : 0.9,
+        "population" : 0.245,
+        "science" : 0.8,
+        "security" : 0.6,
+        "time" : 54.099999999999916
+      }, {
+        "hunger" : 0.82,
+        "military" : 0.83,
+        "population" : 0.341,
+        "science" : 0.66,
+        "security" : 0.6,
+        "time" : 57.89999999999997
+      }, {
+        "hunger" : 0.7,
+        "military" : 1.01,
+        "population" : 0.435,
+        "science" : 0.44,
+        "security" : 0.6,
+        "time" : 55.499999999999936
+      }, {
+        "hunger" : 0.58,
+        "military" : 1.39,
+        "population" : 0.229,
+        "science" : 0.3,
+        "security" : 0.6,
+        "time" : 55.19999999999993
+      }, {
+        "hunger" : 0.44,
+        "military" : 1.35,
+        "population" : 0.227,
+        "science" : 0.42,
+        "security" : 0.6,
+        "time" : 54.89999999999993
+      } ], [ {
+        "hunger" : 0.06,
+        "military" : 0.81,
+        "population" : 0.349,
+        "science" : 0.6,
+        "security" : 0.6,
+        "time" : 51.79999999999988
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "dc888d28-39f4-4e7a-b55f-c9657d57b729" : {
+      "ageData" : [ [ {
+        "hunger" : 0.96,
+        "military" : 0.96,
+        "population" : 0.248,
+        "science" : 0.92,
+        "security" : 0.6,
+        "time" : 57.499999999999964
+      }, {
+        "hunger" : 0.88,
+        "military" : 0.89,
+        "population" : 0.344,
+        "science" : 0.78,
+        "security" : 0.6,
+        "time" : 57.09999999999996
+      }, {
+        "hunger" : 0.78,
+        "military" : 0.8,
+        "population" : 0.34,
+        "science" : 0.78,
+        "security" : 0.6,
+        "time" : 56.39999999999995
+      }, {
+        "hunger" : 0.68,
+        "military" : 0.6,
+        "population" : 0.235,
+        "science" : 1.58,
+        "security" : 0.6,
+        "time" : 56.799999999999955
+      }, {
+        "hunger" : 0.6,
+        "military" : 0.47,
+        "population" : 0.181,
+        "science" : 1.44,
+        "security" : 0.6,
+        "time" : 57.499999999999964
+      } ], [ {
+        "hunger" : 0.76,
+        "military" : 0.3,
+        "population" : 0.22,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 10.299999999999397
+      }, {
+        "hunger" : 0.44,
+        "military" : 0.1,
+        "population" : 0.147,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 15.499999999999378
+      }, {
+        "hunger" : 0.48,
+        "military" : 0.45,
+        "population" : 0.197,
+        "science" : 0.4,
+        "security" : 0.6,
+        "time" : 43.09999999999976
+      }, {
+        "hunger" : 0.48,
+        "military" : 0.25,
+        "population" : 0.227,
+        "science" : 0.02,
+        "security" : 0.4,
+        "time" : 45.9999999999998
+      }, {
+        "hunger" : 0.44,
+        "military" : 0,
+        "population" : 0.249,
+        "science" : 0,
+        "security" : 0.2,
+        "time" : 49.29999999999985
+      } ], [ {
+        "hunger" : 0.44,
+        "military" : 0.3,
+        "population" : 0.135,
+        "science" : 0.7,
+        "security" : 0.2,
+        "time" : 31.999999999999602
+      }, {
+        "hunger" : 0.48,
+        "military" : 0.2,
+        "population" : 0.299,
+        "science" : 0.2,
+        "security" : 0.2,
+        "time" : 37.59999999999968
+      }, {
+        "hunger" : 0.48,
+        "military" : 0.15,
+        "population" : 0.344,
+        "science" : 0.6,
+        "security" : 0.2,
+        "time" : 56.39999999999995
+      }, {
+        "hunger" : 0.4,
+        "military" : 0,
+        "population" : 0.26,
+        "science" : 0.5,
+        "security" : 0.2,
+        "time" : 42.89999999999976
+      }, {
+        "hunger" : 0.42,
+        "military" : 0.01,
+        "population" : 0.317,
+        "science" : 0.7,
+        "security" : 0.2,
+        "time" : 42.099999999999746
+      } ], [ {
+        "hunger" : 0.42,
+        "military" : 0.3,
+        "population" : 0.332,
+        "science" : 0.8,
+        "security" : 0.2,
+        "time" : 36.399999999999665
+      }, {
+        "hunger" : 0.42,
+        "military" : 0.05,
+        "population" : 0.342,
+        "science" : 0,
+        "security" : 0.2,
+        "time" : 36.399999999999665
+      }, {
+        "hunger" : 0.4,
+        "military" : 0,
+        "population" : 0.291,
+        "science" : 0.8,
+        "security" : 0,
+        "time" : 35.89999999999966
+      }, {
+        "hunger" : 0.46,
+        "military" : 0,
+        "population" : 0.307,
+        "science" : 0.96,
+        "security" : 0,
+        "time" : 44.29999999999978
+      }, {
+        "hunger" : 0.48,
+        "military" : 0.2,
+        "population" : 0.389,
+        "science" : 1.04,
+        "security" : 0,
+        "time" : 47.99999999999983
+      } ], [ {
+        "hunger" : 0.42,
+        "military" : 0.05,
+        "population" : 0.444,
+        "science" : 1.02,
+        "security" : 0,
+        "time" : 49.19999999999985
+      }, {
+        "hunger" : 0.42,
+        "military" : 0,
+        "population" : 0.377,
+        "science" : 1.62,
+        "security" : 0,
+        "time" : 51.69999999999988
+      }, {
+        "hunger" : 0.46,
+        "military" : 0.05,
+        "population" : 0.401,
+        "science" : 0.94,
+        "security" : 0,
+        "time" : 48.49999999999984
+      }, {
+        "hunger" : 0.48,
+        "military" : 0,
+        "population" : 0.436,
+        "science" : 1.38,
+        "security" : 0,
+        "time" : 52.599999999999895
+      }, {
+        "hunger" : 0.46,
+        "military" : 0.1,
+        "population" : 0.464,
+        "science" : 1.68,
+        "security" : 0,
+        "time" : 50.599999999999866
+      } ] ],
+      "numAI" : 2,
+      "numMans" : 0
+    },
+    "deb3b51f-06cf-4b42-94b8-18a78bda4e9c" : {
+      "ageData" : [ [ {
+        "hunger" : 0.625,
+        "military" : 0.9,
+        "population" : 0.245,
+        "science" : 0.8,
+        "security" : 0.6,
+        "time" : 54.699999999999925
+      }, {
+        "hunger" : 0.525,
+        "military" : 0.83,
+        "population" : 0.341,
+        "science" : 0.66,
+        "security" : 0.6,
+        "time" : 57.599999999999966
+      }, {
+        "hunger" : 0.4,
+        "military" : 0.74,
+        "population" : 0.337,
+        "science" : 0.66,
+        "security" : 0.6,
+        "time" : 56.099999999999945
+      }, {
+        "hunger" : 0.775,
+        "military" : 0.94,
+        "population" : 0.122,
+        "science" : 0.16,
+        "security" : 0.8,
+        "time" : 46.39999999999981
+      }, {
+        "hunger" : 0.675,
+        "military" : 0.87,
+        "population" : 0.123,
+        "science" : 0.4,
+        "security" : 0.8,
+        "time" : 57.09999999999996
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "e15f90fd-9609-484f-87ea-e9066efe0305" : {
+      "ageData" : [ [ {
+        "hunger" : 0.64,
+        "military" : 0.64,
+        "population" : 0.232,
+        "science" : 0.28,
+        "security" : 0.6,
+        "time" : 41.69999999999974
+      }, {
+        "hunger" : 0.54,
+        "military" : 0.55,
+        "population" : 0.327,
+        "science" : 0.1,
+        "security" : 0.6,
+        "time" : 56.49999999999995
+      }, {
+        "hunger" : 0.88,
+        "military" : 0.59,
+        "population" : 0.414,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 53.69999999999991
+      }, {
+        "hunger" : 0.8,
+        "military" : 0.35,
+        "population" : 0.307,
+        "science" : 1,
+        "security" : 0.6,
+        "time" : 57.39999999999996
+      }, {
+        "hunger" : 0.72,
+        "military" : 0.37,
+        "population" : 0.308,
+        "science" : 1.24,
+        "security" : 0.6,
+        "time" : 56.99999999999996
+      } ], [ {
+        "hunger" : 0.5,
+        "military" : 0.17,
+        "population" : 0.447,
+        "science" : 1.38,
+        "security" : 0.6,
+        "time" : 55.89999999999994
+      }, {
+        "hunger" : 0.48,
+        "military" : 0.25,
+        "population" : 0.496,
+        "science" : 1.36,
+        "security" : 0.6,
+        "time" : 55.89999999999994
+      }, {
+        "hunger" : 0.46,
+        "military" : 0.33,
+        "population" : 0.695,
+        "science" : 1.72,
+        "security" : 0.6,
+        "time" : 60
+      }, {
+        "hunger" : 0.44,
+        "military" : 0.51,
+        "population" : 0.844,
+        "science" : 1.7,
+        "security" : 0.6,
+        "time" : 59.9
+      }, {
+        "hunger" : 0.42,
+        "military" : 0.69,
+        "population" : 0.793,
+        "science" : 2.16,
+        "security" : 0.8,
+        "time" : 60
+      } ], [ {
+        "hunger" : 0.38,
+        "military" : 0.81,
+        "population" : 0.891,
+        "science" : 3.08,
+        "security" : 0.8,
+        "time" : 59.9
+      }, {
+        "hunger" : 0.36,
+        "military" : 0.59,
+        "population" : 0.88,
+        "science" : 3.06,
+        "security" : 0.8,
+        "time" : 60
+      }, {
+        "hunger" : 0.34,
+        "military" : 0.47,
+        "population" : 0.929,
+        "science" : 3.04,
+        "security" : 0.8,
+        "time" : 60
+      }, {
+        "hunger" : 0.32,
+        "military" : 0.55,
+        "population" : 0.878,
+        "science" : 3.4,
+        "security" : 0.8,
+        "time" : 60
+      }, {
+        "hunger" : 0.3,
+        "military" : 0.58,
+        "population" : 1.027,
+        "science" : 3.56,
+        "security" : 0.8,
+        "time" : 59.9
+      } ], [ {
+        "hunger" : 0.26,
+        "military" : 0.58,
+        "population" : 1.025,
+        "science" : 3.06,
+        "security" : 0.8,
+        "time" : 60
+      }, {
+        "hunger" : 0.24,
+        "military" : 0.66,
+        "population" : 0.974,
+        "science" : 3.62,
+        "security" : 0.8,
+        "time" : 59.9
+      }, {
+        "hunger" : 0.22,
+        "military" : 0.54,
+        "population" : 0.998,
+        "science" : 4.38,
+        "security" : 0.6,
+        "time" : 60
+      }, {
+        "hunger" : 0.2,
+        "military" : 0.57,
+        "population" : 0.947,
+        "science" : 4.74,
+        "security" : 0.6,
+        "time" : 60
+      }, {
+        "hunger" : 0.18,
+        "military" : 0.75,
+        "population" : 1.056,
+        "science" : 5.3,
+        "security" : 0.6,
+        "time" : 59.9
+      } ], [ {
+        "hunger" : 0.14,
+        "military" : 0.82,
+        "population" : 1.164,
+        "science" : 5.52,
+        "security" : 0.4,
+        "time" : 59.9
+      }, {
+        "hunger" : 0.12,
+        "military" : 0.9,
+        "population" : 1.213,
+        "science" : 5.5,
+        "security" : 0.4,
+        "time" : 60
+      }, {
+        "hunger" : 0.1,
+        "military" : 0.89,
+        "population" : 1.162,
+        "science" : 5.56,
+        "security" : 0.4,
+        "time" : 60
+      }, {
+        "hunger" : 0.08,
+        "military" : 0.92,
+        "population" : 1.211,
+        "science" : 5.12,
+        "security" : 0.4,
+        "time" : 59.9
+      }, {
+        "hunger" : 0.06,
+        "military" : 1.15,
+        "population" : 1.22,
+        "science" : 4.98,
+        "security" : 0.4,
+        "time" : 60
+      } ], [ {
+        "hunger" : 0.04,
+        "military" : 0.63,
+        "population" : 0.319,
+        "science" : 4.84,
+        "security" : 0.4,
+        "time" : 59.9
+      } ], [ {
+        "hunger" : 0.04,
+        "military" : 0.63,
+        "population" : 0.319,
+        "science" : 4.84,
+        "security" : 0.4,
+        "time" : 59.9
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 0
+    },
+    "e44321b6-fe3e-4677-bf3d-122eff23295e" : {
+      "ageData" : [ [ {
+        "hunger" : 0.475,
+        "military" : 0.78,
+        "population" : 0.239,
+        "science" : 0.56,
+        "security" : 0.6,
+        "time" : 48.79999999999984
+      }, {
+        "hunger" : 0.45,
+        "military" : 0.23,
+        "population" : 0.311,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 40.99999999999973
+      }, {
+        "hunger" : 0.625,
+        "military" : 0.3,
+        "population" : 0.365,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 43.499999999999766
+      }, {
+        "hunger" : 0.625,
+        "military" : 0,
+        "population" : 0.184,
+        "science" : 1,
+        "security" : 0.8,
+        "time" : 31.699999999999598
+      }, {
+        "hunger" : 0.3,
+        "military" : 0,
+        "population" : 0.108,
+        "science" : 0.54,
+        "security" : 0.8,
+        "time" : 48.89999999999984
+      } ], [ {
+        "hunger" : 0.3,
+        "military" : 0.01,
+        "population" : 0.005,
+        "science" : 1.26,
+        "security" : 1,
+        "time" : 24.7999999999995
+      }, {
+        "hunger" : 0.325,
+        "military" : 0.1,
+        "population" : 0.005,
+        "science" : 1.24,
+        "security" : 1,
+        "time" : 35.59999999999965
+      }, {
+        "hunger" : 0.3,
+        "military" : 0.45,
+        "population" : 0.005,
+        "science" : 1.12,
+        "security" : 1,
+        "time" : 48.19999999999983
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "e4a70a2f-fe80-4721-a014-74471da03c62" : {
+      "ageData" : [ [ {
+        "hunger" : 0.3,
+        "military" : 0,
+        "population" : 0.133,
+        "science" : 0,
+        "security" : 0.6,
+        "time" : 60
+      } ] ],
+      "numAI" : 1,
+      "numMans" : 1
+    },
+    "e510f626-26fc-4ae3-a95f-ed1dbe0d9138" : {
+      "ageData" : [ [ {
+        "hunger" : 0.74,
+        "military" : 0.74,
+        "population" : 0.237,
+        "science" : 0.48,
+        "security" : 0.6,
+        "time" : 46.59999999999981
+      }, {
+        "hunger" : 0.32,
+        "military" : 0.15,
+        "population" : 0.307,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 40.09999999999972
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "e8c89e1d-6ede-4520-9f77-1025a19fbf27" : {
+      "ageData" : [ [ {
+        "hunger" : 0.68,
+        "military" : 0.68,
+        "population" : 0.234,
+        "science" : 0.36,
+        "security" : 0.6,
+        "time" : 43.99999999999977
+      }, {
+        "hunger" : 0.26,
+        "military" : 0.01,
+        "population" : 0.287,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 35.39999999999965
+      }, {
+        "hunger" : 0.04,
+        "military" : 0.01,
+        "population" : 0.257,
+        "science" : 0.2,
+        "security" : 0.6,
+        "time" : 50.89999999999987
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "f49c3f1b-c992-4cdc-bcf2-fbcc2629af77" : {
+      "numAI" : 0,
+      "numMans" : 0
+    },
+    "fb4c2aa5-a92e-4aec-a723-a9facf1c2ac0" : {
+      "ageData" : [ [ {
+        "hunger" : 0.9,
+        "military" : 0.9,
+        "population" : 0.245,
+        "science" : 0.8,
+        "security" : 0.6,
+        "time" : 54.49999999999992
+      }, {
+        "hunger" : 0.72,
+        "military" : 0.73,
+        "population" : 0.336,
+        "science" : 0.46,
+        "security" : 0.6,
+        "time" : 52.09999999999989
+      }, {
+        "hunger" : 0.52,
+        "military" : 0.3,
+        "population" : 0.323,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 11.899999999999391
+      }, {
+        "hunger" : 0.58,
+        "military" : 0.5,
+        "population" : 0.051,
+        "science" : 0.1,
+        "security" : 0.6,
+        "time" : 34.299999999999635
+      }, {
+        "hunger" : 0.4,
+        "military" : 0.1,
+        "population" : 0.031,
+        "science" : 0.4,
+        "security" : 0.6,
+        "time" : 47.599999999999824
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    },
+    "fcef7c51-30af-4830-9c9b-8bc4190f20b9" : {
+      "ageData" : [ [ {
+        "hunger" : 0.5,
+        "military" : 0.8,
+        "population" : 0.24,
+        "science" : 0.6,
+        "security" : 0.6,
+        "time" : 50.09999999999986
+      }, {
+        "hunger" : 0.4,
+        "military" : 0.53,
+        "population" : 0.326,
+        "science" : 0.06,
+        "security" : 0.6,
+        "time" : 48.09999999999983
+      }, {
+        "hunger" : 0.525,
+        "military" : 0.47,
+        "population" : 0.408,
+        "science" : 0.02,
+        "security" : 0.6,
+        "time" : 51.39999999999988
+      }, {
+        "hunger" : 0.425,
+        "military" : 0.5,
+        "population" : 0.165,
+        "science" : 0.1,
+        "security" : 0.8,
+        "time" : 43.59999999999977
+      }, {
+        "hunger" : 0.45,
+        "military" : 0.01,
+        "population" : 0.145,
+        "science" : 0.4,
+        "security" : 0.8,
+        "time" : 48.299999999999834
+      } ] ],
+      "numAI" : 0,
+      "numMans" : 1
+    }
+  }
+}
