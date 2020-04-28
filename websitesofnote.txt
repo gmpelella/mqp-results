@@ -1,0 +1,17 @@
+mqp websites:
+
+
+color schemes:
+https://observablehq.com/@d3/color-legend
+
+tutorials/guides
+https://github.com/d3/d3/wiki/Tutorials
+
+https://www.d3-graph-gallery.com/boxplot
+step1: (one box & whikser)
+https://www.d3-graph-gallery.com/graph/boxplot_basic.html
+step2: (moar box & whisker)
+https://www.d3-graph-gallery.com/graph/boxplot_several_groups.html
+step3: (show points w b&w)
+https://www.d3-graph-gallery.com/graph/boxplot_show_individual_points.html
+
