@@ -442,7 +442,7 @@ function parseData(data){
 function bw_vis(){
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 30, bottom: 30, left: 40},
-        width = 400 - margin.left - margin.right,
+        width = 700 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
@@ -451,57 +451,99 @@ function bw_vis(){
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform",  "translate(" + margin.left + "," + margin.top + ")");
 
-    // Compute summary statistics used for the box:
-    var data = bwA0H;
-
-    var data_sorted = data.sort(d3.ascending);
-    var q1 = d3.quantile(data_sorted, .25);
-    var median = d3.quantile(data_sorted, .5);
-    var q3 = d3.quantile(data_sorted, .75);
-    var interQuantileRange = q3 - q1;
-    var min = q1 - 1.5 * interQuantileRange;
-    var max = q1 + 1.5 * interQuantileRange;
+    var xLabels = ["Age0-Hunger", "Age1-Hunger", "Age2-Hunger", "Age3-Hunger", "Age4-Hunger"];
+    // Show the X scale
+    var x = d3.scaleBand()
+        .range([ 0, width ])
+        .domain(xLabels)
+        .paddingInner(1)
+        .paddingOuter(.5);
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
 
     // Show the Y scale
     var y = d3.scaleLinear()
-        .domain([0,3])
+        .domain([0,1])
         .range([height, 0]);
-    svg.call(d3.axisLeft(y));
+    svg.append("g").call(d3.axisLeft(y));
 
-    // a few features for the box
-    var center = 200;
-    var width = 100;
+    var bigGroup = [bwA0H,bwA1H,bwA2H,bwA3H,bwA4H];
+    var i = 0;
+    bigGroup.forEach(data => {
+        console.log(i);
 
-    // Show the main vertical line
-    svg.append("line")
-        .attr("x1", center)
-        .attr("x2", center)
-        .attr("y1", y(min) )
-        .attr("y2", y(max) )
-        .attr("stroke", "black");
+        console.log(data);
+        for( var v = data.length-1; v--;){
+            if ( data[v] === 0 || isNaN(data[v])) data.splice(v, 1);
+        }
+        console.log(data);
 
-    // Show the box
-    svg.append("rect")
-        .attr("x", center - width/2)
-        .attr("y", y(q3) )
-        .attr("height", (y(q1)-y(q3)) )
-        .attr("width", width )
-        .attr("stroke", "black")
-        .style("fill", "#69b3a2");
+        var data_sorted = data.sort(d3.ascending);
+        console.log(data_sorted);
 
-    // show median, min and max horizontal lines
-    svg.selectAll("toto")
-        .data([min, median, max])
-        .enter()
-        .append("line")
-        .attr("x1", center-width/2)
-        .attr("x2", center+width/2)
-        .attr("y1", function(d){ return(y(d))} )
-        .attr("y2", function(d){ return(y(d))} )
-        .attr("stroke", "black");
+
+        // Compute summary statistics used for the box:
+        var q1 = d3.quantile(data_sorted, .25);
+        var median = d3.quantile(data_sorted, .5);
+        var q3 = d3.quantile(data_sorted, .75);
+        var interQuantileRange = q3 - q1;
+        var min = q1 - 1.5 * interQuantileRange;
+        var max = q1 + 1.5 * interQuantileRange;
+
+        // console.log(data_sorted);
+        // console.log(q1);
+        // console.log(median);
+        // console.log(q3);
+        // console.log(interQuantileRange);
+        // console.log(min);
+        // console.log(max);
+
+        // a few features for the box
+        var center = 200;
+        var boxWidth = 100;
+
+        // Show the main vertical line
+        svg.selectAll("vertLines")
+            .data(data)
+            .enter()
+            .append("line")
+                .attr("x1", x(xLabels[i]))
+                .attr("x2", x(xLabels[i]))
+                .attr("y1", y(min))
+                .attr("y2", y(max))
+                .attr("stroke", "black")
+                .style("width", 40);
+
+        // Show the box
+        svg.selectAll("boxes")
+            .data(data)
+            .enter()
+            .append("rect")
+                .attr("x", x(xLabels[i])-boxWidth/2)
+                .attr("y", y(q3))
+                .attr("height", y(q1)-y(q3))
+                .attr("width", boxWidth )
+                .attr("stroke", "black")
+                .style("fill", "#69b3a2");
+
+        // show median, min and max horizontal lines
+        svg.selectAll("medianLines")
+            .data(data)
+            .enter()
+            .append("line")
+            .attr("x1", x(xLabels[i])-boxWidth/2)
+            .attr("x2", x(xLabels[i])+boxWidth/2)
+            .attr("y1", y(median))
+            .attr("y2", y(median))
+            .attr("stroke", "black")
+            .style("width", 80);
+
+        i += 1;
+    });
+
 }
 
 
