@@ -475,11 +475,11 @@ function bw_vis(){
     bigGroup.forEach(data => {
         console.log(i);
 
-        console.log(data);
+        //console.log(data);
         for( var v = data.length-1; v--;){
             if ( data[v] === 0 || isNaN(data[v])) data.splice(v, 1);
         }
-        console.log(data);
+        //console.log(data);
 
         var data_sorted = data.sort(d3.ascending);
         console.log(data_sorted);
@@ -507,7 +507,7 @@ function bw_vis(){
 
         // Show the main vertical line
         svg.selectAll("vertLines")
-            .data(data)
+            .data([1])
             .enter()
             .append("line")
                 .attr("x1", x(xLabels[i]))
@@ -519,7 +519,7 @@ function bw_vis(){
 
         // Show the box
         svg.selectAll("boxes")
-            .data(data)
+            .data([1])
             .enter()
             .append("rect")
                 .attr("x", x(xLabels[i])-boxWidth/2)
@@ -531,7 +531,7 @@ function bw_vis(){
 
         // show median, min and max horizontal lines
         svg.selectAll("medianLines")
-            .data(data)
+            .data([1])
             .enter()
             .append("line")
             .attr("x1", x(xLabels[i])-boxWidth/2)
