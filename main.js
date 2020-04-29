@@ -436,18 +436,19 @@ function bw_vis(){
         .range([height, 0]);
     svg.append("g").call(d3.axisLeft(y));
 
-
-    console.log(dataGroup);
     var i = 0;
+
+    console.log(dataGroup); //################### WHY IS THIS CHANGING #############
+
     dataGroup.forEach(data => {
         //console.log(i);
 
 
-        let tempdata = data;
+        var tempdata = data.filter(() => true);
         //remove null or 0 values
         if(nulldata){
             for( var v = tempdata.length-1; v--;){
-                if ((tempdata[v] == 0) || (isNaN(tempdata[v]))) tempdata.splice(v, 1);
+                if ((tempdata[v] === 0) || (isNaN(tempdata[v]))) tempdata.splice(v, 1);
             }
         }
         else{
