@@ -34,6 +34,14 @@ let bwA4H3 = [];
 let bwA4H4 = [];
 
 
+var dataGroup = [];
+var xLabels = [];
+function updateBigData(){
+    dataGroup = [bwA0H,bwA1H,bwA2H,bwA3H,bwA4H];
+    xLabels = ["Age0-Hunger", "Age1-Hunger", "Age2-Hunger", "Age3-Hunger", "Age4-Hunger"];
+    bw_vis();
+}
+
 //parsed data - organize data
 function parseData(data){
     //for each row of the data, organize the columns
@@ -433,27 +441,41 @@ function parseData(data){
         //     science: d.age4Data__science4,
         //     security: d.age4Data__security4,
         //     time: d.age4Data__time4};
-    })
-
-    bw_vis();
+    });
+    //on startup, do the box&whisker visual with general ages / stats
+    updateBigData();
 }
 
 //GRAPHS / VIS
 function bw_vis(){
+
+    //#####################################################
+    //remove previous lines, rects, circles
+    var svg = d3.select("#vis");
+    if(svg != null){
+        svg.selectAll("rect").remove();
+        svg.selectAll("boxes").remove();
+        svg.selectAll("vertLines").remove();
+        svg.selectAll("medianLines").remove();
+        svg.selectAll("line").remove();
+        svg.selectAll("circle").remove();
+        svg.selectAll("indPoints").remove();
+        svg.selectAll("g").remove();
+    }
+    //#####################################################
+
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 30, bottom: 30, left: 40},
         width = 700 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
-    var svg = d3.select("#content")
-        .append("svg")
+    svg = d3.select("#vis")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform",  "translate(" + margin.left + "," + margin.top + ")");
 
-    var xLabels = ["Age0-Hunger", "Age1-Hunger", "Age2-Hunger", "Age3-Hunger", "Age4-Hunger"];
     // Show the X scale
     var x = d3.scaleBand()
         .range([ 0, width ])
@@ -470,9 +492,8 @@ function bw_vis(){
         .range([height, 0]);
     svg.append("g").call(d3.axisLeft(y));
 
-    var bigGroup = [bwA0H,bwA1H,bwA2H,bwA3H,bwA4H];
     var i = 0;
-    bigGroup.forEach(data => {
+    dataGroup.forEach(data => {
         console.log(i);
 
         //console.log(data);
@@ -543,8 +564,7 @@ function bw_vis(){
 
         // Add individual points with jitter
         var jitterWidth = 50;
-        svg
-            .selectAll("indPoints")
+        svg.selectAll("indPoints")
             .data(data)
             .enter()
             .append("circle")
