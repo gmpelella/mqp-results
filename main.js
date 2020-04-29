@@ -98,6 +98,103 @@ let bwA4P1 = [];
 let bwA4P2 = [];
 let bwA4P3 = [];
 let bwA4P4 = [];
+//#########################
+//SCIENCE
+let bwA0Sc = [];
+let bwA0Sc0 = [];
+let bwA0Sc1 = [];
+let bwA0Sc2 = [];
+let bwA0Sc3 = [];
+let bwA0Sc4 = [];
+let bwA1Sc = [];
+let bwA1Sc0 = [];
+let bwA1Sc1 = [];
+let bwA1Sc2 = [];
+let bwA1Sc3 = [];
+let bwA1Sc4 = [];
+let bwA2Sc = [];
+let bwA2Sc0 = [];
+let bwA2Sc1 = [];
+let bwA2Sc2 = [];
+let bwA2Sc3 = [];
+let bwA2Sc4 = [];
+let bwA3Sc = [];
+let bwA3Sc0 = [];
+let bwA3Sc1 = [];
+let bwA3Sc2 = [];
+let bwA3Sc3 = [];
+let bwA3Sc4 = [];
+let bwA4Sc = [];
+let bwA4Sc0 = [];
+let bwA4Sc1 = [];
+let bwA4Sc2 = [];
+let bwA4Sc3 = [];
+let bwA4Sc4 = [];
+//#########################
+//SECURITY
+let bwA0Se = [];
+let bwA0Se0 = [];
+let bwA0Se1 = [];
+let bwA0Se2 = [];
+let bwA0Se3 = [];
+let bwA0Se4 = [];
+let bwA1Se = [];
+let bwA1Se0 = [];
+let bwA1Se1 = [];
+let bwA1Se2 = [];
+let bwA1Se3 = [];
+let bwA1Se4 = [];
+let bwA2Se = [];
+let bwA2Se0 = [];
+let bwA2Se1 = [];
+let bwA2Se2 = [];
+let bwA2Se3 = [];
+let bwA2Se4 = [];
+let bwA3Se = [];
+let bwA3Se0 = [];
+let bwA3Se1 = [];
+let bwA3Se2 = [];
+let bwA3Se3 = [];
+let bwA3Se4 = [];
+let bwA4Se = [];
+let bwA4Se0 = [];
+let bwA4Se1 = [];
+let bwA4Se2 = [];
+let bwA4Se3 = [];
+let bwA4Se4 = [];
+//#########################
+//TIME
+let bwA0T = [];
+let bwA0T0 = [];
+let bwA0T1 = [];
+let bwA0T2 = [];
+let bwA0T3 = [];
+let bwA0T4 = [];
+let bwA1T = [];
+let bwA1T0 = [];
+let bwA1T1 = [];
+let bwA1T2 = [];
+let bwA1T3 = [];
+let bwA1T4 = [];
+let bwA2T = [];
+let bwA2T0 = [];
+let bwA2T1 = [];
+let bwA2T2 = [];
+let bwA2T3 = [];
+let bwA2T4 = [];
+let bwA3T = [];
+let bwA3T0 = [];
+let bwA3T1 = [];
+let bwA3T2 = [];
+let bwA3T3 = [];
+let bwA3T4 = [];
+let bwA4T = [];
+let bwA4T0 = [];
+let bwA4T1 = [];
+let bwA4T2 = [];
+let bwA4T3 = [];
+let bwA4T4 = [];
+
 
 var dataGroup = [];
 var xLabels = [];
@@ -120,7 +217,25 @@ function updateBigData(){
         bwA1P,
         bwA2P,
         bwA3P,
-        bwA4P
+        bwA4P,
+        //####
+        bwA0Sc,
+        bwA1Sc,
+        bwA2Sc,
+        bwA3Sc,
+        bwA4Sc,
+        //####
+        bwA0Se,
+        bwA1Se,
+        bwA2Se,
+        bwA3Se,
+        bwA4Se,
+        //####
+        bwA0T,
+        bwA1T,
+        bwA2T,
+        bwA3T,
+        bwA4T
     ];
     xLabels = [
         "Age0-Hunger",
@@ -137,7 +252,22 @@ function updateBigData(){
         "Age1-Population",
         "Age2-Population",
         "Age3-Population",
-        "Age4-Population"
+        "Age4-Population",
+        "Age0-Science",
+        "Age1-Science",
+        "Age2-Science",
+        "Age3-Science",
+        "Age4-Science",
+        "Age0-Security",
+        "Age1-Security",
+        "Age2-Security",
+        "Age3-Security",
+        "Age4-Security",
+        "Age0-Time",
+        "Age1-Time",
+        "Age2-Time",
+        "Age3-Time",
+        "Age4-Time"
     ];
 
     selectedPlot = "BigData";
@@ -479,7 +609,166 @@ function parseData(data){
         bwA4P2.push(d["age4Data__population2"]);
         bwA4P3.push(d["age4Data__population3"]);
         bwA4P4.push(d["age4Data__population4"]);
-
+        //population
+        //#######################################################
+        //science
+        bwA0Sc.push(d["age0Data__science0"],
+            d["age0Data__science1"],
+            d["age0Data__science2"],
+            d["age0Data__science3"],
+            d["age0Data__science4"]);
+        bwA0Sc0.push(d["age0Data__science0"]);
+        bwA0Sc1.push(d["age0Data__science1"]);
+        bwA0Sc2.push(d["age0Data__science2"]);
+        bwA0Sc3.push(d["age0Data__science3"]);
+        bwA0Sc4.push(d["age0Data__science4"]);
+        bwA1Sc.push(d["age1Data__science0"],
+            d["age1Data__science1"],
+            d["age1Data__science2"],
+            d["age1Data__science3"],
+            d["age1Data__science4"]);
+        bwA1Sc0.push(d["age1Data__science0"]);
+        bwA1Sc1.push(d["age1Data__science1"]);
+        bwA1Sc2.push(d["age1Data__science2"]);
+        bwA1Sc3.push(d["age1Data__science3"]);
+        bwA1Sc4.push(d["age1Data__science4"]);
+        bwA2Sc.push(d["age2Data__science0"],
+            d["age2Data__science1"],
+            d["age2Data__science2"],
+            d["age2Data__science3"],
+            d["age2Data__science4"]);
+        bwA2Sc0.push(d["age2Data__science0"]);
+        bwA2Sc1.push(d["age2Data__science1"]);
+        bwA2Sc2.push(d["age2Data__science2"]);
+        bwA2Sc3.push(d["age2Data__science3"]);
+        bwA2Sc4.push(d["age2Data__science4"]);
+        bwA3Sc.push(d["age3Data__science0"],
+            d["age3Data__science1"],
+            d["age3Data__science2"],
+            d["age3Data__science3"],
+            d["age3Data__science4"]);
+        bwA3Sc0.push(d["age3Data__science0"]);
+        bwA3Sc1.push(d["age3Data__science1"]);
+        bwA3Sc2.push(d["age3Data__science2"]);
+        bwA3Sc3.push(d["age3Data__science3"]);
+        bwA3Sc4.push(d["age3Data__science4"]);
+        bwA4Sc.push(d["age4Data__science0"],
+            d["age4Data__science1"],
+            d["age4Data__science2"],
+            d["age4Data__science3"],
+            d["age4Data__science4"]);
+        bwA4Sc0.push(d["age4Data__science0"]);
+        bwA4Sc1.push(d["age4Data__science1"]);
+        bwA4Sc2.push(d["age4Data__science2"]);
+        bwA4Sc3.push(d["age4Data__science3"]);
+        bwA4Sc4.push(d["age4Data__science4"]);
+        //science
+        //#######################################################
+        //security
+        bwA0Se.push(d["age0Data__security0"],
+            d["age0Data__security1"],
+            d["age0Data__security2"],
+            d["age0Data__security3"],
+            d["age0Data__security4"]);
+        bwA0Se0.push(d["age0Data__security0"]);
+        bwA0Se1.push(d["age0Data__security1"]);
+        bwA0Se2.push(d["age0Data__security2"]);
+        bwA0Se3.push(d["age0Data__security3"]);
+        bwA0Se4.push(d["age0Data__security4"]);
+        bwA1Se.push(d["age1Data__security0"],
+            d["age1Data__security1"],
+            d["age1Data__security2"],
+            d["age1Data__security3"],
+            d["age1Data__security4"]);
+        bwA1Se0.push(d["age1Data__security0"]);
+        bwA1Se1.push(d["age1Data__security1"]);
+        bwA1Se2.push(d["age1Data__security2"]);
+        bwA1Se3.push(d["age1Data__security3"]);
+        bwA1Se4.push(d["age1Data__security4"]);
+        bwA2Se.push(d["age2Data__security0"],
+            d["age2Data__security1"],
+            d["age2Data__security2"],
+            d["age2Data__security3"],
+            d["age2Data__security4"]);
+        bwA2Se0.push(d["age2Data__security0"]);
+        bwA2Se1.push(d["age2Data__security1"]);
+        bwA2Se2.push(d["age2Data__security2"]);
+        bwA2Se3.push(d["age2Data__security3"]);
+        bwA2Se4.push(d["age2Data__security4"]);
+        bwA3Se.push(d["age3Data__security0"],
+            d["age3Data__security1"],
+            d["age3Data__security2"],
+            d["age3Data__security3"],
+            d["age3Data__security4"]);
+        bwA3Se0.push(d["age3Data__security0"]);
+        bwA3Se1.push(d["age3Data__security1"]);
+        bwA3Se2.push(d["age3Data__security2"]);
+        bwA3Se3.push(d["age3Data__security3"]);
+        bwA3Se4.push(d["age3Data__security4"]);
+        bwA4Se.push(d["age4Data__security0"],
+            d["age4Data__security1"],
+            d["age4Data__security2"],
+            d["age4Data__security3"],
+            d["age4Data__security4"]);
+        bwA4Se0.push(d["age4Data__security0"]);
+        bwA4Se1.push(d["age4Data__security1"]);
+        bwA4Se2.push(d["age4Data__security2"]);
+        bwA4Se3.push(d["age4Data__security3"]);
+        bwA4Se4.push(d["age4Data__security4"]);
+        //security
+        //#######################################################
+        //time
+        bwA0T.push(d["age0Data__time0"],
+            d["age0Data__time1"],
+            d["age0Data__time2"],
+            d["age0Data__time3"],
+            d["age0Data__time4"]);
+        bwA0T0.push(d["age0Data__time0"]);
+        bwA0T1.push(d["age0Data__time1"]);
+        bwA0T2.push(d["age0Data__time2"]);
+        bwA0T3.push(d["age0Data__time3"]);
+        bwA0T4.push(d["age0Data__time4"]);
+        bwA1T.push(d["age1Data__time0"],
+            d["age1Data__time1"],
+            d["age1Data__time2"],
+            d["age1Data__time3"],
+            d["age1Data__time4"]);
+        bwA1T0.push(d["age1Data__time0"]);
+        bwA1T1.push(d["age1Data__time1"]);
+        bwA1T2.push(d["age1Data__time2"]);
+        bwA1T3.push(d["age1Data__time3"]);
+        bwA1T4.push(d["age1Data__time4"]);
+        bwA2T.push(d["age2Data__time0"],
+            d["age2Data__time1"],
+            d["age2Data__time2"],
+            d["age2Data__time3"],
+            d["age2Data__time4"]);
+        bwA2T0.push(d["age2Data__time0"]);
+        bwA2T1.push(d["age2Data__time1"]);
+        bwA2T2.push(d["age2Data__time2"]);
+        bwA2T3.push(d["age2Data__time3"]);
+        bwA2T4.push(d["age2Data__time4"]);
+        bwA3T.push(d["age3Data__time0"],
+            d["age3Data__time1"],
+            d["age3Data__time2"],
+            d["age3Data__time3"],
+            d["age3Data__time4"]);
+        bwA3T0.push(d["age3Data__time0"]);
+        bwA3T1.push(d["age3Data__time1"]);
+        bwA3T2.push(d["age3Data__time2"]);
+        bwA3T3.push(d["age3Data__time3"]);
+        bwA3T4.push(d["age3Data__time4"]);
+        bwA4T.push(d["age4Data__time0"],
+            d["age4Data__time1"],
+            d["age4Data__time2"],
+            d["age4Data__time3"],
+            d["age4Data__time4"]);
+        bwA4T0.push(d["age4Data__time0"]);
+        bwA4T1.push(d["age4Data__time1"]);
+        bwA4T2.push(d["age4Data__time2"]);
+        bwA4T3.push(d["age4Data__time3"]);
+        bwA4T4.push(d["age4Data__time4"]);
+        //time
 
     });
     //on startup, do the box&whisker visual with general ages / stats
