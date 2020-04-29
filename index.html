@@ -12,8 +12,12 @@
 <link href="style.css" rel="stylesheet">
 
 <!-- future change graph buttons here -->
-<div>
+<div id="buttonDiv">
     <button onclick="updateBigData()">BIG DATA (box & whisker)</button>
+</div>
+<div id="extraShit">
+    <!-- stuff like a radiobutton or checkbox for fancy data stuff -->
+    <input type="checkbox" id="dataCheck" onclick="nullData()">
 </div>
 
 <br/>
@@ -22,6 +26,13 @@
 <div id="content">
      <svg id="vis"></svg>
 </div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p id="description">filler text - make a narrative to make this a standalone site in addition to filler for the essay</p>
 
 <!-- references -->
 <!-- https://www.d3-graph-gallery.com/boxplot -->

@@ -1,4 +1,6 @@
 let parsedData;
+let nulldata = false;
+let selectedPlot;
 
 // box and whisker shit:
 //HUNGER
@@ -32,21 +34,92 @@ let bwA4H1 = [];
 let bwA4H2 = [];
 let bwA4H3 = [];
 let bwA4H4 = [];
+//#########################
+//MILITARY
+let bwA0M = [];
+let bwA0M0 = [];
+let bwA0M1 = [];
+let bwA0M2 = [];
+let bwA0M3 = [];
+let bwA0M4 = [];
+let bwA1M = [];
+let bwA1M0 = [];
+let bwA1M1 = [];
+let bwA1M2 = [];
+let bwA1M3 = [];
+let bwA1M4 = [];
+let bwA2M = [];
+let bwA2M0 = [];
+let bwA2M1 = [];
+let bwA2M2 = [];
+let bwA2M3 = [];
+let bwA2M4 = [];
+let bwA3M = [];
+let bwA3M0 = [];
+let bwA3M1 = [];
+let bwA3M2 = [];
+let bwA3M3 = [];
+let bwA3M4 = [];
+let bwA4M = [];
+let bwA4M0 = [];
+let bwA4M1 = [];
+let bwA4M2 = [];
+let bwA4M3 = [];
+let bwA4M4 = [];
 
 
 var dataGroup = [];
 var xLabels = [];
+//BUTTONS
 function updateBigData(){
-    dataGroup = [bwA0H,bwA1H,bwA2H,bwA3H,bwA4H];
-    xLabels = ["Age0-Hunger", "Age1-Hunger", "Age2-Hunger", "Age3-Hunger", "Age4-Hunger"];
+    dataGroup = [
+        bwA0H,
+        bwA1H,
+        bwA2H,
+        bwA3H,
+        bwA4H,
+        //####
+        bwA0M,
+        bwA1M,
+        bwA2M,
+        bwA3M,
+        bwA4M
+    ];
+    xLabels = [
+        "Age0-Hunger",
+        "Age1-Hunger",
+        "Age2-Hunger",
+        "Age3-Hunger",
+        "Age4-Hunger",
+        "Age0-Military",
+        "Age1-Military",
+        "Age2-Military",
+        "Age3-Military",
+        "Age4-Military"
+    ];
+
+    selectedPlot = "BigData";
+
     bw_vis();
+    //update a descriptor text to the bottom of the page/plot
+}
+//CHECKBOX
+function nullData(){
+    //swap null data
+    if(nulldata == false)nulldata=true;
+    else if(nulldata == true)nulldata=false;
+    console.log("swapping true/false");
+    console.log(nulldata);
+    //and update whichever graphydoo
+    console.log(selectedPlot);
+    if(selectedPlot === "BigData")updateBigData();
 }
 
 //parsed data - organize data
 function parseData(data){
     //for each row of the data, organize the columns
     data.forEach( d => {
-        let id = d.uuid;
+        //let id = d.uuid;
 
         //need to make sure all the values except the uuid is counted as an int - not string
         //age 0
@@ -205,7 +278,7 @@ function parseData(data){
         d["age4Data__security4"] =   +d["age4Data__security4"];
         d["age4Data__time4"] =       +d["age4Data__time4"];
 
-        //box&whisker plot data:
+        //box&whisker plot data so far: // could prolly use for other plots too
         //HUNGER
         bwA0H.push(d["age0Data__hunger0"],
             d["age0Data__hunger1"],
@@ -257,190 +330,61 @@ function parseData(data){
         bwA4H2.push(d["age4Data__hunger2"]);
         bwA4H3.push(d["age4Data__hunger3"]);
         bwA4H4.push(d["age4Data__hunger4"]);
+        //hunger
+        //#######################################################
+        //military
+        bwA0M.push(d["age0Data__military0"],
+            d["age0Data__military1"],
+            d["age0Data__military2"],
+            d["age0Data__military3"],
+            d["age0Data__military4"]);
+        bwA0M0.push(d["age0Data__military0"]);
+        bwA0M1.push(d["age0Data__military1"]);
+        bwA0M2.push(d["age0Data__military2"]);
+        bwA0M3.push(d["age0Data__military3"]);
+        bwA0M4.push(d["age0Data__military4"]);
+        bwA1M.push(d["age1Data__military0"],
+            d["age1Data__military1"],
+            d["age1Data__military2"],
+            d["age1Data__military3"],
+            d["age1Data__military4"]);
+        bwA1M0.push(d["age1Data__military0"]);
+        bwA1M1.push(d["age1Data__military1"]);
+        bwA1M2.push(d["age1Data__military2"]);
+        bwA1M3.push(d["age1Data__military3"]);
+        bwA1M4.push(d["age1Data__military4"]);
+        bwA2M.push(d["age2Data__military0"],
+            d["age2Data__military1"],
+            d["age2Data__military2"],
+            d["age2Data__military3"],
+            d["age2Data__military4"]);
+        bwA2M0.push(d["age2Data__military0"]);
+        bwA2M1.push(d["age2Data__military1"]);
+        bwA2M2.push(d["age2Data__military2"]);
+        bwA2M3.push(d["age2Data__military3"]);
+        bwA2M4.push(d["age2Data__military4"]);
+        bwA3M.push(d["age3Data__military0"],
+            d["age3Data__military1"],
+            d["age3Data__military2"],
+            d["age3Data__military3"],
+            d["age3Data__military4"]);
+        bwA3M0.push(d["age3Data__military0"]);
+        bwA3M1.push(d["age3Data__military1"]);
+        bwA3M2.push(d["age3Data__military2"]);
+        bwA3M3.push(d["age3Data__military3"]);
+        bwA3M4.push(d["age3Data__military4"]);
+        bwA4M.push(d["age4Data__military0"],
+            d["age4Data__military1"],
+            d["age4Data__military2"],
+            d["age4Data__military3"],
+            d["age4Data__military4"]);
+        bwA4M0.push(d["age4Data__military0"]);
+        bwA4M1.push(d["age4Data__military1"]);
+        bwA4M2.push(d["age4Data__military2"]);
+        bwA4M3.push(d["age4Data__military3"]);
+        bwA4M4.push(d["age4Data__military4"]);
 
 
-
-        // //wait do i need this here? // i dont think so
-        // //age 0: stone age
-        // let age0choice0 = {
-        //     hunger: d.age0Data__hunger0,
-        //     military: d.age0Data__military0,
-        //     population: d.age0Data__population0,
-        //     science: d.age0Data__science0,
-        //     security: d.age0Data__security0,
-        //     time: d.age0Data__time0};
-        // let age0choice1 = {
-        //     hunger: d.age0Data__hunger1,
-        //     military: d.age0Data__military1,
-        //     population: d.age0Data__population1,
-        //     science: d.age0Data__science1,
-        //     security: d.age0Data__security1,
-        //     time: d.age0Data__time1};
-        // let age0choice2 = {
-        //     hunger: d.age0Data__hunger2,
-        //     military: d.age0Data__military2,
-        //     population: d.age0Data__population2,
-        //     science: d.age0Data__science2,
-        //     security: d.age0Data__security2,
-        //     time: d.age0Data__time2};
-        // let age0choice3 = {
-        //     hunger: d.age0Data__hunger3,
-        //     military: d.age0Data__military3,
-        //     population: d.age0Data__population3,
-        //     science: d.age0Data__science3,
-        //     security: d.age0Data__security3,
-        //     time: d.age0Data__time3};
-        // let age0choice4 = {
-        //     hunger: d.age0Data__hunger4,
-        //     military: d.age0Data__military4,
-        //     population: d.age0Data__population4,
-        //     science: d.age0Data__science4,
-        //     security: d.age0Data__security4,
-        //     time: d.age0Data__time4};
-        // //age 1: metal age
-        // let age1choice0 = {
-        //     hunger: d.age1Data__hunger0,
-        //     military: d.age1Data__military0,
-        //     population: d.age1Data__population0,
-        //     science: d.age1Data__science0,
-        //     security: d.age1Data__security0,
-        //     time: d.age1Data__time0};
-        // let age1choice1 = {
-        //     hunger: d.age1Data__hunger1,
-        //     military: d.age1Data__military1,
-        //     population: d.age1Data__population1,
-        //     science: d.age1Data__science1,
-        //     security: d.age1Data__security1,
-        //     time: d.age1Data__time1};
-        // let age1choice2 = {
-        //     hunger: d.age1Data__hunger2,
-        //     military: d.age1Data__military2,
-        //     population: d.age1Data__population2,
-        //     science: d.age1Data__science2,
-        //     security: d.age1Data__security2,
-        //     time: d.age1Data__time2};
-        // let age1choice3 = {
-        //     hunger: d.age1Data__hunger3,
-        //     military: d.age1Data__military3,
-        //     population: d.age1Data__population3,
-        //     science: d.age1Data__science3,
-        //     security: d.age1Data__security3,
-        //     time: d.age1Data__time3};
-        // let age1choice4 = {
-        //     hunger: d.age1Data__hunger4,
-        //     military: d.age1Data__military4,
-        //     population: d.age1Data__population4,
-        //     science: d.age1Data__science4,
-        //     security: d.age1Data__security4,
-        //     time: d.age1Data__time4};
-        // //age 2: conquering age
-        // let age2choice0 = {
-        //     hunger: d.age2Data__hunger0,
-        //     military: d.age2Data__military0,
-        //     population: d.age2Data__population0,
-        //     science: d.age2Data__science0,
-        //     security: d.age2Data__security0,
-        //     time: d.age2Data__time0};
-        // let age2choice1 = {
-        //     hunger: d.age2Data__hunger1,
-        //     military: d.age2Data__military1,
-        //     population: d.age2Data__population1,
-        //     science: d.age2Data__science1,
-        //     security: d.age2Data__security1,
-        //     time: d.age2Data__time1};
-        // let age2choice2 = {
-        //     hunger: d.age2Data__hunger2,
-        //     military: d.age2Data__military2,
-        //     population: d.age2Data__population2,
-        //     science: d.age2Data__science2,
-        //     security: d.age2Data__security2,
-        //     time: d.age2Data__time2};
-        // let age2choice3 = {
-        //     hunger: d.age2Data__hunger3,
-        //     military: d.age2Data__military3,
-        //     population: d.age2Data__population3,
-        //     science: d.age2Data__science3,
-        //     security: d.age2Data__security3,
-        //     time: d.age2Data__time3};
-        // let age2choice4 = {
-        //     hunger: d.age2Data__hunger4,
-        //     military: d.age2Data__military4,
-        //     population: d.age2Data__population4,
-        //     science: d.age2Data__science4,
-        //     security: d.age2Data__security4,
-        //     time: d.age2Data__time4};
-        // //age 3: industrial age
-        // let age3choice0 = {
-        //     hunger: d.age3Data__hunger0,
-        //     military: d.age3Data__military0,
-        //     population: d.age3Data__population0,
-        //     science: d.age3Data__science0,
-        //     security: d.age3Data__security0,
-        //     time: d.age3Data__time0};
-        // let age3choice1 = {
-        //     hunger: d.age3Data__hunger1,
-        //     military: d.age3Data__military1,
-        //     population: d.age3Data__population1,
-        //     science: d.age3Data__science1,
-        //     security: d.age3Data__security1,
-        //     time: d.age3Data__time1};
-        // let age3choice2 = {
-        //     hunger: d.age3Data__hunger2,
-        //     military: d.age3Data__military2,
-        //     population: d.age3Data__population2,
-        //     science: d.age3Data__science2,
-        //     security: d.age3Data__security2,
-        //     time: d.age3Data__time2};
-        // let age3choice3 = {
-        //     hunger: d.age3Data__hunger3,
-        //     military: d.age3Data__military3,
-        //     population: d.age3Data__population3,
-        //     science: d.age3Data__science3,
-        //     security: d.age3Data__security3,
-        //     time: d.age3Data__time3};
-        // let age3choice4 = {
-        //     hunger: d.age3Data__hunger4,
-        //     military: d.age3Data__military4,
-        //     population: d.age3Data__population4,
-        //     science: d.age3Data__science4,
-        //     security: d.age3Data__security4,
-        //     time: d.age3Data__time4};
-        // //age 4: space age
-        // let age4choice0 = {
-        //     hunger: d.age4Data__hunger0,
-        //     military: d.age4Data__military0,
-        //     population: d.age4Data__population0,
-        //     science: d.age4Data__science0,
-        //     security: d.age4Data__security0,
-        //     time: d.age4Data__time0};
-        // let age4choice1 = {
-        //     hunger: d.age4Data__hunger1,
-        //     military: d.age4Data__military1,
-        //     population: d.age4Data__population1,
-        //     science: d.age4Data__science1,
-        //     security: d.age4Data__security1,
-        //     time: d.age4Data__time1};
-        // let age4choice2 = {
-        //     hunger: d.age4Data__hunger2,
-        //     military: d.age4Data__military2,
-        //     population: d.age4Data__population2,
-        //     science: d.age4Data__science2,
-        //     security: d.age4Data__security2,
-        //     time: d.age4Data__time2};
-        // let age4choice3 = {
-        //     hunger: d.age4Data__hunger3,
-        //     military: d.age4Data__military3,
-        //     population: d.age4Data__population3,
-        //     science: d.age4Data__science3,
-        //     security: d.age4Data__security3,
-        //     time: d.age4Data__time3};
-        // let age4choice4 = {
-        //     hunger: d.age4Data__hunger4,
-        //     military: d.age4Data__military4,
-        //     population: d.age4Data__population4,
-        //     science: d.age4Data__science4,
-        //     security: d.age4Data__security4,
-        //     time: d.age4Data__time4};
     });
     //on startup, do the box&whisker visual with general ages / stats
     updateBigData();
@@ -466,7 +410,7 @@ function bw_vis(){
 
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 30, bottom: 30, left: 40},
-        width = 700 - margin.left - margin.right,
+        width = xLabels.length*100 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
@@ -492,19 +436,29 @@ function bw_vis(){
         .range([height, 0]);
     svg.append("g").call(d3.axisLeft(y));
 
+
+    console.log(dataGroup);
     var i = 0;
     dataGroup.forEach(data => {
-        console.log(i);
+        //console.log(i);
 
-        //console.log(data);
-        for( var v = data.length-1; v--;){
-            if ( data[v] === 0 || isNaN(data[v])) data.splice(v, 1);
+
+        let tempdata = data;
+        //remove null or 0 values
+        if(nulldata){
+            for( var v = tempdata.length-1; v--;){
+                if ((tempdata[v] == 0) || (isNaN(tempdata[v]))) tempdata.splice(v, 1);
+            }
         }
-        //console.log(data);
+        else{
+            for( var v = tempdata.length-1; v--;){
+                if (isNaN(tempdata[v])) tempdata.splice(v, 1);
+            }
+        }
 
-        var data_sorted = data.sort(d3.ascending);
-        console.log(data_sorted);
 
+        var data_sorted = tempdata.sort(d3.ascending);
+        //console.log(data_sorted);
 
         // Compute summary statistics used for the box:
         var q1 = d3.quantile(data_sorted, .25);
@@ -524,7 +478,7 @@ function bw_vis(){
 
         // a few features for the box
         var center = 200;
-        var boxWidth = 100;
+        var boxWidth = 50;
 
         // Show the main vertical line
         svg.selectAll("vertLines")
@@ -563,9 +517,9 @@ function bw_vis(){
             .style("width", 80);
 
         // Add individual points with jitter
-        var jitterWidth = 50;
+        var jitterWidth = 25;
         svg.selectAll("indPoints")
-            .data(data)
+            .data(tempdata)
             .enter()
             .append("circle")
             .attr("cx", function(){return(x(xLabels[i]) - jitterWidth/2 + Math.random()*jitterWidth )})
