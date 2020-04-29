@@ -66,7 +66,38 @@ let bwA4M1 = [];
 let bwA4M2 = [];
 let bwA4M3 = [];
 let bwA4M4 = [];
-
+//#########################
+//POPULATION
+let bwA0P = [];
+let bwA0P0 = [];
+let bwA0P1 = [];
+let bwA0P2 = [];
+let bwA0P3 = [];
+let bwA0P4 = [];
+let bwA1P = [];
+let bwA1P0 = [];
+let bwA1P1 = [];
+let bwA1P2 = [];
+let bwA1P3 = [];
+let bwA1P4 = [];
+let bwA2P = [];
+let bwA2P0 = [];
+let bwA2P1 = [];
+let bwA2P2 = [];
+let bwA2P3 = [];
+let bwA2P4 = [];
+let bwA3P = [];
+let bwA3P0 = [];
+let bwA3P1 = [];
+let bwA3P2 = [];
+let bwA3P3 = [];
+let bwA3P4 = [];
+let bwA4P = [];
+let bwA4P0 = [];
+let bwA4P1 = [];
+let bwA4P2 = [];
+let bwA4P3 = [];
+let bwA4P4 = [];
 
 var dataGroup = [];
 var xLabels = [];
@@ -83,7 +114,13 @@ function updateBigData(){
         bwA1M,
         bwA2M,
         bwA3M,
-        bwA4M
+        bwA4M,
+        //####
+        bwA0P,
+        bwA1P,
+        bwA2P,
+        bwA3P,
+        bwA4P
     ];
     xLabels = [
         "Age0-Hunger",
@@ -95,7 +132,12 @@ function updateBigData(){
         "Age1-Military",
         "Age2-Military",
         "Age3-Military",
-        "Age4-Military"
+        "Age4-Military",
+        "Age0-Population",
+        "Age1-Population",
+        "Age2-Population",
+        "Age3-Population",
+        "Age4-Population"
     ];
 
     selectedPlot = "BigData";
@@ -110,8 +152,9 @@ function nullData(){
     else if(nulldata == true)nulldata=false;
     console.log("swapping true/false");
     console.log(nulldata);
+
     //and update whichever graphydoo
-    console.log(selectedPlot);
+    //console.log(selectedPlot);
     if(selectedPlot === "BigData")updateBigData();
 }
 
@@ -383,6 +426,59 @@ function parseData(data){
         bwA4M2.push(d["age4Data__military2"]);
         bwA4M3.push(d["age4Data__military3"]);
         bwA4M4.push(d["age4Data__military4"]);
+        //military
+        //#######################################################
+        //population
+        bwA0P.push(d["age0Data__population0"],
+            d["age0Data__population1"],
+            d["age0Data__population2"],
+            d["age0Data__population3"],
+            d["age0Data__population4"]);
+        bwA0P0.push(d["age0Data__population0"]);
+        bwA0P1.push(d["age0Data__population1"]);
+        bwA0P2.push(d["age0Data__population2"]);
+        bwA0P3.push(d["age0Data__population3"]);
+        bwA0P4.push(d["age0Data__population4"]);
+        bwA1P.push(d["age1Data__population0"],
+            d["age1Data__population1"],
+            d["age1Data__population2"],
+            d["age1Data__population3"],
+            d["age1Data__population4"]);
+        bwA1P0.push(d["age1Data__population0"]);
+        bwA1P1.push(d["age1Data__population1"]);
+        bwA1P2.push(d["age1Data__population2"]);
+        bwA1P3.push(d["age1Data__population3"]);
+        bwA1P4.push(d["age1Data__population4"]);
+        bwA2P.push(d["age2Data__population0"],
+            d["age2Data__population1"],
+            d["age2Data__population2"],
+            d["age2Data__population3"],
+            d["age2Data__population4"]);
+        bwA2P0.push(d["age2Data__population0"]);
+        bwA2P1.push(d["age2Data__population1"]);
+        bwA2P2.push(d["age2Data__population2"]);
+        bwA2P3.push(d["age2Data__population3"]);
+        bwA2P4.push(d["age2Data__population4"]);
+        bwA3P.push(d["age3Data__population0"],
+            d["age3Data__population1"],
+            d["age3Data__population2"],
+            d["age3Data__population3"],
+            d["age3Data__population4"]);
+        bwA3P0.push(d["age3Data__population0"]);
+        bwA3P1.push(d["age3Data__population1"]);
+        bwA3P2.push(d["age3Data__population2"]);
+        bwA3P3.push(d["age3Data__population3"]);
+        bwA3P4.push(d["age3Data__population4"]);
+        bwA4P.push(d["age4Data__population0"],
+            d["age4Data__population1"],
+            d["age4Data__population2"],
+            d["age4Data__population3"],
+            d["age4Data__population4"]);
+        bwA4P0.push(d["age4Data__population0"]);
+        bwA4P1.push(d["age4Data__population1"]);
+        bwA4P2.push(d["age4Data__population2"]);
+        bwA4P3.push(d["age4Data__population3"]);
+        bwA4P4.push(d["age4Data__population4"]);
 
 
     });
@@ -436,15 +532,25 @@ function bw_vis(){
         .range([height, 0]);
     svg.append("g").call(d3.axisLeft(y));
 
-
+    //color for boxes for age ????????????????????????
+    var myColor = d3.scaleOrdinal()
+        .domain([1,5])
+        .range(d3.schemeSet3);
+    //legend for color
+    //https://www.d3-graph-gallery.com/graph/custom_legend.html
 
     //console.log(dataGroup);
     var i = 0;
+    var agei = 0;
     dataGroup.forEach(data => {
+        //console.log(i);
+        if(agei >= 5) agei=0;
+
+        console.log(agei);
 
         var tempdata = data.filter(() => true);
         //remove null or 0 values
-        if(nulldata){
+        if(!nulldata){
             for( var v = tempdata.length-1; v--;){
                 if ((tempdata[v] === 0) || (isNaN(tempdata[v]))) tempdata.splice(v, 1);
             }
@@ -477,7 +583,7 @@ function bw_vis(){
 
         // a few features for the box
         var center = 200;
-        var boxWidth = 50;
+        var boxWidth = 75;
 
         // Show the main vertical line
         svg.selectAll("vertLines")
@@ -501,7 +607,7 @@ function bw_vis(){
                 .attr("height", y(q1)-y(q3))
                 .attr("width", boxWidth )
                 .attr("stroke", "black")
-                .style("fill", "#69b3a2");
+                .attr("fill", d3.schemeSet3[agei]);
 
         // show median, min and max horizontal lines
         svg.selectAll("medianLines")
@@ -516,7 +622,7 @@ function bw_vis(){
             .style("width", 80);
 
         // Add individual points with jitter
-        var jitterWidth = 25;
+        var jitterWidth = 50;
         svg.selectAll("indPoints")
             .data(tempdata)
             .enter()
@@ -528,6 +634,7 @@ function bw_vis(){
             .attr("stroke", "black");
 
         i += 1;
+        agei += 1;
     });
 
 }
