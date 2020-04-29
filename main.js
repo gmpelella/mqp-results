@@ -541,6 +541,19 @@ function bw_vis(){
             .attr("stroke", "black")
             .style("width", 80);
 
+        // Add individual points with jitter
+        var jitterWidth = 50;
+        svg
+            .selectAll("indPoints")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("cx", function(){return(x(xLabels[i]) - jitterWidth/2 + Math.random()*jitterWidth )})
+            .attr("cy", function(d){return(y(d))})
+            .attr("r", 4)
+            .style("fill", "white")
+            .attr("stroke", "black");
+
         i += 1;
     });
 
