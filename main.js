@@ -292,8 +292,10 @@ function nullData(){
 function parseData(data){
     //for each row of the data, organize the columns
     data.forEach( d => {
-        //let id = d.uuid;
+        //let id = d.uuid; //TODO: make id list
 
+        //TODO: make time/60 to fit in plot?
+        //TODO: just kinda make sure all the data is capped at 1
         //need to make sure all the values except the uuid is counted as an int - not string
         //age 0
         d["age0Data__hunger0"] =     +d["age0Data__hunger0"];
