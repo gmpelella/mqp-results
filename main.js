@@ -436,13 +436,11 @@ function bw_vis(){
         .range([height, 0]);
     svg.append("g").call(d3.axisLeft(y));
 
+
+
+    //console.log(dataGroup);
     var i = 0;
-
-    console.log(dataGroup); //################### WHY IS THIS CHANGING #############
-
     dataGroup.forEach(data => {
-        //console.log(i);
-
 
         var tempdata = data.filter(() => true);
         //remove null or 0 values
