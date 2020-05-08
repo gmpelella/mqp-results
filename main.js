@@ -18,6 +18,7 @@ function nullData(){
     //and update whichever graphydoo
     //console.log(selectedPlot);
     if(selectedPlot === "BigData")updateBigData();
+    if(selectedPlot === "eventTime")updateEvent();
 }
 
 //parsed data - organize data
