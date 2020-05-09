@@ -9,17 +9,19 @@
 function updateEvent(){
 
     dataGroup=[];
-    for (var i=0; i < ids.length; i++){
+    for (var i=0; i < orderedIDs.length; i++){
         dataGroup.push(
             {
                 class:i,
-                label:selectedIDs[i],
+                label:orderedIDs[i],
                 data:ETperID[i]
             }
         )
     }
 
-
+    console.log(ETperID);
+    console.log(dataGroup);
+    console.log("hello??");
     selectedPlot = "eventTime";
 
     et_vis();
@@ -57,8 +59,8 @@ function et_vis(){
 
     var margin = {top: 10, right: 30, bottom: 30, left: 40},
         width = 700 - margin.left - margin.right,
-        height = 1800 - margin.top - margin.bottom,
-        miniHeight = ids.length *50,
+        height = 200 - margin.top - margin.bottom,
+        miniHeight = orderedIDs.length * 5,
         mainHeight = height - miniHeight -50;
 
     //scales
@@ -86,19 +88,19 @@ function et_vis(){
         .attr("id", "clip")
         .append("rect")
         .attr("width", width)
-        .attr("height", mainHeight);
+        .attr("height", mainHeight+50);
 
 
-    var main = svg.append("g")
-        .attr("transform", "translate(" + margin.right + "," + margin.top + ")")
-        .attr("width", width)
-        .attr("height", mainHeight)
-        .attr("class", "main");
+    // var main = svg.append("g")
+    //     .attr("transform", "translate(" + margin.right + "," + margin.top + ")")
+    //     .attr("width", width)
+    //     .attr("height", mainHeight)
+    //     .attr("class", "main");
 
     var mini = svg.append("g")
         .attr("transform", "translate(" + margin.right + "," + (mainHeight + margin.top) + ")")
         .attr("width", width)
-        .attr("height", miniHeight)
+        .attr("height", miniHeight+50)
         .attr("class", "mini");
 
 
@@ -134,7 +136,7 @@ function et_vis(){
         .attr("stroke", "lightgray");
 
     mini.append("g").selectAll(".laneText")
-        .data(ids)
+        .data(orderedIDs)
         .enter().append("text")
         .text(function(d) {return d;})
         .attr("x", 10) //-margin.right
@@ -145,29 +147,25 @@ function et_vis(){
 
 
 
-    var itemRects = main.append("g")
-        .attr("clip-path", "url(#clip)");
+    // var itemRects = main.append("g")
+    //     .attr("clip-path", "url(#clip)");
+
 
     //for each set of time/details in dataGroup
     dataGroup.forEach(data => {
 
         var tempdata = JSON.parse(JSON.stringify(data));
-        console.log(tempdata);
-        console.log(tempdata.class);
-        console.log(tempdata.label);
-        console.log(tempdata.data[0].time);
 
         //mini item rects
         mini.append("g").selectAll("miniItems")
             .data(tempdata.data)
-            .enter().append("rect")
+            .enter().append("circle")
             .attr("class", "miniItem" + tempdata.class)
-            .attr("x", function(d) {
-                console.log(x(d.time));
+            .attr("cx", function(d) {
+                //console.log(x(d.time));
                 return x(d.time)})
-            .attr("y", y2(tempdata.class + .5) - 5)
-            .attr("width", 5)
-            .attr("height", 10);
+            .attr("cy", y2(tempdata.class + .5) - 5)
+            .attr("r", 5);
 
         // //mini labels
         // mini.append("g").selectAll(".miniLabels")
@@ -179,10 +177,8 @@ function et_vis(){
         //     .attr("dy",".5ex");
 
 
+        //details here
+
     });
-
-
-
-
 
 }

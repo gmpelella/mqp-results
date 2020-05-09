@@ -5,22 +5,24 @@ let dataGroup = [];
 var xLabels = [];
 
 let ids = [];
-var selectedIDs = ["c30d5c55-c469-433e-99cd-fed5d9a50992",
+let orderedIDs=[];
+var selectedIDs = [
+    "c30d5c55-c469-433e-99cd-fed5d9a50992",
     "511c7364-a0a2-492a-8bf3-9d8e2af34309",
-    "2156677c-1710-46ec-b351-8f882b177319",
-    "bd36f52c-b907-48ba-8bd5-06b762f16ffc",
-    "dc888d28-39f4-4e7a-b55f-c9657d57b729",
-    "c7a7b051-73e9-4e73-8473-d0ba40331dd8",
+    "2156677c-1710-46ec-b351-8f882b177319", //
+    "bd36f52c-b907-48ba-8bd5-06b762f16ffc", //
+    "dc888d28-39f4-4e7a-b55f-c9657d57b729", //
+    "c7a7b051-73e9-4e73-8473-d0ba40331dd8", //
     "cd6e71ce-7b44-47ea-851d-3cae1f111da5",
-    "b3ccfe3e-67b0-4999-81dd-af0a45cb4eae",
-    "8c577227-76e3-42ac-a117-873131e8e2ef",
-    "1355814f-bd43-42a7-bb5b-2506bb04d51b",
+    "b3ccfe3e-67b0-4999-81dd-af0a45cb4eae", //
+    "8c577227-76e3-42ac-a117-873131e8e2ef", //
+    "1355814f-bd43-42a7-bb5b-2506bb04d51b", //
     "1cf463ed-cecd-4c03-b46c-faad664dd7c4",
-    "75d3061b-bdf1-4d2d-a98c-76c779d0564c",
+    "75d3061b-bdf1-4d2d-a98c-76c779d0564c", //
     "1c218270-dfe8-4c63-8fd0-1b3e7e37f24a",
     "87bdd9da-dc26-491c-b120-95d9e249eaa8",
-    "803f9136-d124-49f0-9343-8d6eb5ff5b25",
-    "643b2249-3dc2-4d02-ae84-b99421de4205",
+    "803f9136-d124-49f0-9343-8d6eb5ff5b25", //
+    "643b2249-3dc2-4d02-ae84-b99421de4205", //
     "4adabd01-b5fa-4f03-a25c-39903be64125"];
 let ETperID=[];
 
@@ -529,6 +531,9 @@ function parseData(data){
 
         for(var v=0;v<=ids.length;v++){
             if(selectedIDs.includes(d["uuid"])){
+                //console.log("pushing to event timeline id list");
+                //console.log(d["uuid"]);
+                orderedIDs.push(d["uuid"]);
                 ETperID.push([
                     //age 0
                     {time:60-d["age0Data__time0"],
@@ -585,7 +590,8 @@ function parseData(data){
                         hunger:d["age4Data__hunger3"], military:d["age4Data__military3"], science:d["age4Data__science3"], security:d["age4Data__security3"]},
                     {time:60*26-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"]-d["age3Data__time3"]-d["age3Data__time3"]-d["age4Data__time0"]-d["age4Data__time1"]-d["age4Data__time2"]-d["age4Data__time3"]-d["age4Data__time4"],
                         hunger:d["age4Data__hunger4"], military:d["age4Data__military4"], science:d["age4Data__science4"], security:d["age4Data__security4"]}
-                ])
+                ]);
+                break;
             }
         }
 
@@ -596,8 +602,9 @@ function parseData(data){
 }
 
 
+
+
 d3.csv('data-fixed.csv').then( function(data) {
     parsedData = parseData(data);
-
     //update graph in parseData
 });
