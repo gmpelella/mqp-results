@@ -5,6 +5,7 @@
 
 
 
+
 function updateEvent(){
 
     dataGroup=[];
@@ -12,7 +13,7 @@ function updateEvent(){
         dataGroup.push(
             {
                 class:i,
-                label:ids[i],
+                label:selectedIDs[i],
                 data:ETperID[i]
             }
         )
