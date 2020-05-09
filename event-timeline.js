@@ -1,5 +1,5 @@
 
-var ids = ["person0","person1"];
+//var ids = ["person0","person1"];
 
 
 
@@ -7,22 +7,17 @@ var ids = ["person0","person1"];
 
 function updateEvent(){
 
-    dataGroup = [
-        // json format?
-        {
-            class:0,
-            label: "testboi",
-            data: [{time:5, details:{hunger:50,stuff:10}},
-                {time:15, details:{hunger:20,stuff:20}},
-                {time:20, details:{hunger:30,stuff:30}}]
-        },
-        {
-            class:1,
-            label: "testboi2",
-            data: [{time:5, details:{hunger:50,stuff:10}},
-                {time:10, details:{hunger:50,stuff:10}}]
-        }
-    ];
+    dataGroup=[];
+    for (var i=0; i < ids.length; i++){
+        dataGroup.push(
+            {
+                class:i,
+                label:ids[i],
+                data:ETperID[i]
+            }
+        )
+    }
+
 
     selectedPlot = "eventTime";
 
@@ -31,6 +26,7 @@ function updateEvent(){
 }
 
 
+//http://bl.ocks.org/bunkat/2338034
 function et_vis(){
     //#####################################################
     //remove previous lines, rects, circles
@@ -59,14 +55,14 @@ function et_vis(){
 
 
     var margin = {top: 10, right: 30, bottom: 30, left: 40},
-        width = 500 - margin.left - margin.right,
-        height = 400 - margin.top - margin.bottom,
-        miniHeight = ids.length *12 +50,
+        width = 700 - margin.left - margin.right,
+        height = 1800 - margin.top - margin.bottom,
+        miniHeight = ids.length *50,
         mainHeight = height - miniHeight -50;
 
     //scales
     var x = d3.scaleLinear()
-        .domain([0, 15])
+        .domain([0, 200])
         .range([0, width]);
     var x1 = d3.scaleLinear()
         .range([0, width]);
@@ -140,7 +136,7 @@ function et_vis(){
         .data(ids)
         .enter().append("text")
         .text(function(d) {return d;})
-        .attr("x", 0) //-margin.right
+        .attr("x", 10) //-margin.right
         .attr("y", function(d, i) {return y2(i + .5);})
         .attr("dy", ".5ex")
         .attr("text-anchor", "end")
@@ -165,7 +161,9 @@ function et_vis(){
             .data(tempdata.data)
             .enter().append("rect")
             .attr("class", "miniItem" + tempdata.class)
-            .attr("x", function(d) {return x(d.time)})
+            .attr("x", function(d) {
+                console.log(x(d.time));
+                return x(d.time)})
             .attr("y", y2(tempdata.class + .5) - 5)
             .attr("width", 5)
             .attr("height", 10);

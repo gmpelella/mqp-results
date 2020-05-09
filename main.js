@@ -1,10 +1,11 @@
 let parsedData;
 let nulldata = false;
 let selectedPlot;
-var dataGroup = [];
+let dataGroup = [];
 var xLabels = [];
 
-
+let ids = [];
+let ETperID=[];
 
 
 //CHECKBOX
@@ -506,6 +507,67 @@ function parseData(data){
         bwA4T3.push(d["age4Data__time3"]);
         bwA4T4.push(d["age4Data__time4"]);
         //time
+
+        ids.push(d["uuid"]);
+
+
+        ETperID.push([
+                //age 0
+                {time:60-d["age0Data__time0"],
+                    hunger:d["age0Data__hunger0"], military:d["age0Data__military0"], science:d["age0Data__science0"], security:d["age0Data__security0"]},
+                {time:60*2-d["age0Data__time0"]-d["age0Data__time1"],
+                    hunger:d["age0Data__hunger1"], military:d["age0Data__military1"], science:d["age0Data__science1"], security:d["age0Data__security1"]},
+                {time:60*3-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"],
+                    hunger:d["age0Data__hunger2"], military:d["age0Data__military2"], science:d["age0Data__science2"], security:d["age0Data__security2"]},
+                {time:60*4-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"],
+                    hunger:d["age0Data__hunger3"], military:d["age0Data__military3"], science:d["age0Data__science3"], security:d["age0Data__security3"]},
+                {time:60*5-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"],
+                    hunger:d["age0Data__hunger4"], military:d["age0Data__military4"], science:d["age0Data__science4"], security:d["age0Data__security4"]},
+                //age1
+                {time:60*6-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"],
+                    hunger:d["age1Data__hunger0"], military:d["age1Data__military0"], science:d["age1Data__science0"], security:d["age1Data__security0"]},
+                {time:60*7-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"],
+                    hunger:d["age1Data__hunger1"], military:d["age1Data__military1"], science:d["age1Data__science1"], security:d["age1Data__security1"]},
+                {time:60*8-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"],
+                    hunger:d["age1Data__hunger2"], military:d["age1Data__military2"], science:d["age1Data__science2"], security:d["age1Data__security2"]},
+                {time:60*9-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"],
+                    hunger:d["age1Data__hunger3"], military:d["age1Data__military3"], science:d["age1Data__science3"], security:d["age1Data__security3"]},
+                {time:60*10-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"],
+                    hunger:d["age1Data__hunger4"], military:d["age1Data__military4"], science:d["age1Data__science4"], security:d["age1Data__security4"]},
+                //age2
+                {time:60*12-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"],
+                    hunger:d["age2Data__hunger0"], military:d["age2Data__military0"], science:d["age2Data__science0"], security:d["age2Data__security0"]},
+                {time:60*13-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"],
+                    hunger:d["age2Data__hunger1"], military:d["age2Data__military1"], science:d["age2Data__science1"], security:d["age2Data__security1"]},
+                {time:60*14-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"],
+                    hunger:d["age2Data__hunger2"], military:d["age2Data__military2"], science:d["age2Data__science2"], security:d["age2Data__security2"]},
+                {time:60*15-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"],
+                    hunger:d["age2Data__hunger3"], military:d["age2Data__military3"], science:d["age2Data__science3"], security:d["age2Data__security3"]},
+                {time:60*16-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"],
+                    hunger:d["age2Data__hunger4"], military:d["age2Data__military4"], science:d["age2Data__science4"], security:d["age2Data__security4"]},
+                //age3
+                {time:60*17-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"],
+                    hunger:d["age3Data__hunger0"], military:d["age3Data__military0"], science:d["age3Data__science0"], security:d["age3Data__security0"]},
+                {time:60*18-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"],
+                    hunger:d["age3Data__hunger1"], military:d["age3Data__military1"], science:d["age3Data__science1"], security:d["age3Data__security1"]},
+                {time:60*19-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"],
+                    hunger:d["age3Data__hunger2"], military:d["age3Data__military2"], science:d["age3Data__science2"], security:d["age3Data__security2"]},
+                {time:60*20-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"]-d["age3Data__time3"],
+                    hunger:d["age3Data__hunger3"], military:d["age3Data__military3"], science:d["age3Data__science3"], security:d["age3Data__security3"]},
+                {time:60*21-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"]-d["age3Data__time3"]-d["age3Data__time3"],
+                    hunger:d["age3Data__hunger4"], military:d["age3Data__military4"], science:d["age3Data__science4"], security:d["age3Data__security4"]},
+                //age4
+                {time:60*22-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"]-d["age3Data__time3"]-d["age3Data__time3"]-d["age4Data__time0"],
+                    hunger:d["age4Data__hunger0"], military:d["age4Data__military0"], science:d["age4Data__science0"], security:d["age4Data__security0"]},
+                {time:60*23-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"]-d["age3Data__time3"]-d["age3Data__time3"]-d["age4Data__time0"]-d["age4Data__time1"],
+                    hunger:d["age4Data__hunger1"], military:d["age4Data__military1"], science:d["age4Data__science1"], security:d["age4Data__security1"]},
+                {time:60*24-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"]-d["age3Data__time3"]-d["age3Data__time3"]-d["age4Data__time0"]-d["age4Data__time1"]-d["age4Data__time2"],
+                    hunger:d["age4Data__hunger2"], military:d["age4Data__military2"], science:d["age4Data__science2"], security:d["age4Data__security2"]},
+                {time:60*25-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"]-d["age3Data__time3"]-d["age3Data__time3"]-d["age4Data__time0"]-d["age4Data__time1"]-d["age4Data__time2"]-d["age4Data__time3"],
+                    hunger:d["age4Data__hunger3"], military:d["age4Data__military3"], science:d["age4Data__science3"], security:d["age4Data__security3"]},
+                {time:60*26-d["age0Data__time0"]-d["age0Data__time1"]-d["age0Data__time2"]-d["age0Data__time3"]-d["age0Data__time0"]-d["age1Data__time0"]-d["age1Data__time1"]-d["age1Data__time2"]-d["age1Data__time3"]-d["age1Data__time1"]-d["age2Data__time0"]-d["age2Data__time1"]-d["age2Data__time2"]-d["age2Data__time3"]-d["age2Data__time2"]-d["age3Data__time0"]-d["age3Data__time1"]-d["age3Data__time2"]-d["age3Data__time3"]-d["age3Data__time3"]-d["age4Data__time0"]-d["age4Data__time1"]-d["age4Data__time2"]-d["age4Data__time3"]-d["age4Data__time4"],
+                    hunger:d["age4Data__hunger4"], military:d["age4Data__military4"], science:d["age4Data__science4"], security:d["age4Data__security4"]}
+           ])
 
     });
     //on startup, do the box&whisker visual with general ages / stats

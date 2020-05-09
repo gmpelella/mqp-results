@@ -196,6 +196,7 @@ let bwA4T4 = [];
 
 //BUTTONS
 function updateBigData(){
+    dataGroup=[];
     dataGroup = [
         bwA0H,
         bwA1H,
