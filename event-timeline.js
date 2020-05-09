@@ -12,17 +12,15 @@ function updateEvent(){
         {
             class:0,
             label: "testboi",
-            start : 5, end:6
-        },
-        {
-            class:0,
-            label: "testboi",
-            start : 10, end:11
+            data: [{time:5, details:{hunger:50,stuff:10}},
+                {time:15, details:{hunger:20,stuff:20}},
+                {time:20, details:{hunger:30,stuff:30}}]
         },
         {
             class:1,
             label: "testboi2",
-            start : 10, end:11
+            data: [{time:5, details:{hunger:50,stuff:10}},
+                {time:10, details:{hunger:50,stuff:10}}]
         }
     ];
 
@@ -62,7 +60,7 @@ function et_vis(){
 
     var margin = {top: 10, right: 30, bottom: 30, left: 40},
         width = 500 - margin.left - margin.right,
-        height = 200 - margin.top - margin.bottom,
+        height = 400 - margin.top - margin.bottom,
         miniHeight = ids.length *12 +50,
         mainHeight = height - miniHeight -50;
 
@@ -107,26 +105,26 @@ function et_vis(){
         .attr("class", "mini");
 
 
-
-    //main lanes and texts
-    main.append("g").selectAll(".laneLines")
-        .data(dataGroup)
-        .enter().append("line")
-        .attr("x1", margin.right)
-        .attr("y1", function(d) {return y1(d.class);})
-        .attr("x2", width)
-        .attr("y2", function(d) {return y1(d.class);})
-        .attr("stroke", "lightgray");
-
-    main.append("g").selectAll(".laneText")
-        .data(ids)
-        .enter().append("text")
-        .text(function(d) {return d;})
-        .attr("x", -margin.right)
-        .attr("y", function(d, i) {return y1(i + .5);})
-        .attr("dy", ".5ex")
-        .attr("text-anchor", "end")
-        .attr("class", "laneText");
+    //
+    // //main lanes and texts
+    // main.append("g").selectAll(".laneLines")
+    //     .data(dataGroup)
+    //     .enter().append("line")
+    //     .attr("x1", margin.right)
+    //     .attr("y1", function(d) {return y1(d.class);})
+    //     .attr("x2", width)
+    //     .attr("y2", function(d) {return y1(d.class);})
+    //     .attr("stroke", "lightgray");
+    //
+    // main.append("g").selectAll(".laneText")
+    //     .data(ids)
+    //     .enter().append("text")
+    //     .text(function(d) {return d;})
+    //     .attr("x", -margin.right)
+    //     .attr("y", function(d, i) {return y1(i + .5);})
+    //     .attr("dy", ".5ex")
+    //     .attr("text-anchor", "end")
+    //     .attr("class", "laneText");
 
     //mini lanes and texts
     mini.append("g").selectAll(".laneLines")
@@ -142,7 +140,7 @@ function et_vis(){
         .data(ids)
         .enter().append("text")
         .text(function(d) {return d;})
-        .attr("x", -margin.right)
+        .attr("x", 0) //-margin.right
         .attr("y", function(d, i) {return y2(i + .5);})
         .attr("dy", ".5ex")
         .attr("text-anchor", "end")
@@ -153,24 +151,38 @@ function et_vis(){
     var itemRects = main.append("g")
         .attr("clip-path", "url(#clip)");
 
-    //mini item rects
-    mini.append("g").selectAll("miniItems")
-        .data(dataGroup)
-        .enter().append("rect")
-        .attr("class", function(d) {return "miniItem" + d.class;})
-        .attr("x", function(d) {return x(d.start);})
-        .attr("y", function(d) {return y2(d.class + .5) - 5;})
-        .attr("width", function(d) {return x(d.end - d.start);})
-        .attr("height", 10);
+    //for each set of time/details in dataGroup
+    dataGroup.forEach(data => {
 
-    //mini labels
-    mini.append("g").selectAll(".miniLabels")
-        .data(dataGroup)
-        .enter().append("text")
-        .text(function(d) {return d.label;})
-        .attr("x", function(d) {return x(d.start);})
-        .attr("y", function(d) {return y2(d.class + .5);})
-        .attr("dy",".5ex");
+        var tempdata = JSON.parse(JSON.stringify(data));
+        console.log(tempdata);
+        console.log(tempdata.class);
+        console.log(tempdata.label);
+        console.log(tempdata.data[0].time);
+
+        //mini item rects
+        mini.append("g").selectAll("miniItems")
+            .data(tempdata.data)
+            .enter().append("rect")
+            .attr("class", "miniItem" + tempdata.class)
+            .attr("x", function(d) {return x(d.time)})
+            .attr("y", y2(tempdata.class + .5) - 5)
+            .attr("width", 5)
+            .attr("height", 10);
+
+        // //mini labels
+        // mini.append("g").selectAll(".miniLabels")
+        //     .data(tempdata)
+        //     .enter().append("text")
+        //     .text(function(d) {return d.label;})
+        //     .attr("x", function(d,i) {return x(d.data[i].time);})
+        //     .attr("y", function(d) {return y2(d.class + .5);})
+        //     .attr("dy",".5ex");
+
+
+    });
+
+
 
 
 
