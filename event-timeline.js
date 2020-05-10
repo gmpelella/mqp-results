@@ -1,5 +1,5 @@
 
-//var ids = ["person0","person1"];
+var playtesters = ["playtester 0","playtester 1","playtester 2","playtester 3","playtester 4","playtester 5","playtester 6","playtester 7","playtester 8","playtester 9"];
 
 
 
@@ -13,7 +13,7 @@ function updateEvent(){
         dataGroup.push(
             {
                 class:i,
-                label:orderedIDs[i],
+                label:playtesters[i],
                 data:ETperID[i]
             }
         )
@@ -57,15 +57,15 @@ function et_vis(){
 
 
 
-    var margin = {top: 10, right: 30, bottom: 30, left: 40},
-        width = 700 - margin.left - margin.right,
-        height = 200 - margin.top - margin.bottom,
-        miniHeight = orderedIDs.length * 5,
+    var margin = {top: 10, right: 30, bottom: 30, left: 100},
+        width = 4200 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom,
+        miniHeight = (height*7.3) - (orderedIDs.length * 7),
         mainHeight = height - miniHeight -50;
 
     //scales
     var x = d3.scaleLinear()
-        .domain([0, 200])
+        .domain([0, 2200])
         .range([0, width]);
     var x1 = d3.scaleLinear()
         .range([0, width]);
@@ -83,12 +83,12 @@ function et_vis(){
         // .append("g")
         // .attr("transform",  "translate(" + margin.left + "," + margin.top + ")");
 
-    svg.append("defs")
-        .append("clipPath")
-        .attr("id", "clip")
-        .append("rect")
-        .attr("width", width)
-        .attr("height", mainHeight+50);
+    // svg.append("defs")
+    //     .append("clipPath")
+    //     .attr("id", "clip")
+    //     .append("rect")
+    //     .attr("width", width)
+    //     .attr("height", mainHeight+50);
 
 
     // var main = svg.append("g")
@@ -98,9 +98,9 @@ function et_vis(){
     //     .attr("class", "main");
 
     var mini = svg.append("g")
-        .attr("transform", "translate(" + margin.right + "," + (mainHeight + margin.top) + ")")
+        .attr("transform", "translate(" + margin.right + "," + margin.top + ")")
         .attr("width", width)
-        .attr("height", miniHeight+50)
+        .attr("height", miniHeight+10)
         .attr("class", "mini");
 
 
@@ -136,19 +136,25 @@ function et_vis(){
         .attr("stroke", "lightgray");
 
     mini.append("g").selectAll(".laneText")
-        .data(orderedIDs)
+        .data(playtesters)
         .enter().append("text")
-        .text(function(d) {return d;})
-        .attr("x", 10) //-margin.right
-        .attr("y", function(d, i) {return y2(i + .5);})
+        .text(function(d) {
+            console.log(d);
+            return d;})
+        .attr("x", 0) //-margin.right
+        .attr("y", function(d, i) {
+            console.log(i);
+            return y2(i + .5);})
         .attr("dy", ".5ex")
         .attr("text-anchor", "end")
         .attr("class", "laneText");
 
 
 
-    // var itemRects = main.append("g")
-    //     .attr("clip-path", "url(#clip)");
+    // Define the div for the tooltip
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
 
     //for each set of time/details in dataGroup
@@ -156,16 +162,45 @@ function et_vis(){
 
         var tempdata = JSON.parse(JSON.stringify(data));
 
+        //TODO:need to parse the data a bit - remove data where hunger - 0?
+        //i dont know what firebase did
+        //it be weird
+
+        console.log(tempdata);
+
         //mini item rects
         mini.append("g").selectAll("miniItems")
             .data(tempdata.data)
             .enter().append("circle")
             .attr("class", "miniItem" + tempdata.class)
-            .attr("cx", function(d) {
-                //console.log(x(d.time));
-                return x(d.time)})
+            .attr("cx", function(d) {return x(d.time)})
             .attr("cy", y2(tempdata.class + .5) - 5)
-            .attr("r", 5);
+            .attr("r", 5)
+            .attr("style",function (d) {
+                if(d.age == "Stone Age") return "fill: palevioletred";
+                if(d.age == "Metal Age") return "fill: peachpuff";
+                if(d.age == "Conquering Age") return "fill: olivedrab";
+                if(d.age == "Industrial Age") return "fill: mediumaquamarine";
+                if(d.age == "Space Age") return "fill: steelblue";
+            })
+            .on("mouseover", function(d) {
+                div.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                div	.html("Age: "+d.age +"<br/>"+
+                        "Time: "+parseInt(d.time)+" s"+ "<br/>"+
+                        "Hunger: "+d.hunger +"%"+"<br/>"+
+                        "Military: "+d.military +"%"+"<br/>"+
+                        "Science: "+d.science +"%"+"<br/>"+
+                        "Security: "+d.security+"%")
+                    .style("left", (d3.event.pageX) + "px")
+                    .style("top", (d3.event.pageY - 90) + "px");
+            })
+            .on("mouseout", function(d) {
+                div.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
 
         // //mini labels
         // mini.append("g").selectAll(".miniLabels")
