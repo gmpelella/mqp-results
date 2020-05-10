@@ -45,12 +45,12 @@ function nullData(){
 function parseData(data){
     //for each row of the data, organize the columns
     data.forEach( d => {
-        //let id = d.uuid; //TODO: make id list
+        //id list is made at the bottom
         //TODO: AI choice decision
         //TODO: manual calls
 
         //TODO: make time/60 to fit in plot?
-        //TODO: just kinda make sure all the data is capped at 1
+        //TODO: just kinda make sure relevant data is capped at 1
         //need to make sure all the values except the uuid is counted as an int - not string
         //age 0
         d["age0Data__hunger0"] =     +d["age0Data__hunger0"];
@@ -529,6 +529,7 @@ function parseData(data){
 
         ids.push(d["uuid"]);
 
+        //event stuff
         for(var v=0;v<=ids.length;v++){
             if(selectedIDs.includes(d["uuid"])){
                 //console.log("pushing to event timeline id list");

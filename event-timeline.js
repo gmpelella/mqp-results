@@ -48,8 +48,8 @@ function et_vis(){
         svg.selectAll("clipPath").remove();
         svg.selectAll(".laneLines").remove();
         svg.selectAll(".laneText").remove();
-        svg.selectAll("miniItems").remove();
-        svg.selectAll(".miniLabels").remove();
+        svg.selectAll("eventItems").remove();
+        svg.selectAll(".eventLabels").remove();
 
     }
     //#####################################################
@@ -58,14 +58,14 @@ function et_vis(){
 
 
     var margin = {top: 10, right: 30, bottom: 30, left: 100},
-        width = 4200 - margin.left - margin.right,
+        width = 2000 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom,
-        miniHeight = (height*7.3) - (orderedIDs.length * 7),
-        mainHeight = height - miniHeight -50;
+        eventHeight = (height*7.3) - (orderedIDs.length * 7),
+        mainHeight = height - eventHeight -50;
 
     //scales
     var x = d3.scaleLinear()
-        .domain([0, 2200])
+        .domain([0, 2000])
         .range([0, width]);
     var x1 = d3.scaleLinear()
         .range([0, width]);
@@ -74,7 +74,7 @@ function et_vis(){
         .range([0, mainHeight]);
     var y2 = d3.scaleLinear()
         .domain([0, ids.length])
-        .range([0, miniHeight]);
+        .range([0, eventHeight]);
 
 
     svg = d3.select("#vis")
@@ -97,11 +97,11 @@ function et_vis(){
     //     .attr("height", mainHeight)
     //     .attr("class", "main");
 
-    var mini = svg.append("g")
+    var event = svg.append("g")
         .attr("transform", "translate(" + margin.right + "," + margin.top + ")")
         .attr("width", width)
-        .attr("height", miniHeight+10)
-        .attr("class", "mini");
+        .attr("height", eventHeight+10)
+        .attr("class", "event");
 
 
     //
@@ -125,8 +125,8 @@ function et_vis(){
     //     .attr("text-anchor", "end")
     //     .attr("class", "laneText");
 
-    //mini lanes and texts
-    mini.append("g").selectAll(".laneLines")
+    //event lanes and texts
+    event.append("g").selectAll(".laneLines")
         .data(dataGroup)
         .enter().append("line")
         .attr("x1", margin.right)
@@ -135,13 +135,13 @@ function et_vis(){
         .attr("y2", function(d) {return y2(d.class);})
         .attr("stroke", "lightgray");
 
-    mini.append("g").selectAll(".laneText")
+    event.append("g").selectAll(".laneText")
         .data(playtesters)
         .enter().append("text")
         .text(function(d) {
-            console.log(d);
+            //console.log(d);
             return d;})
-        .attr("x", 0) //-margin.right
+        .attr("x", 45) //-margin.right
         .attr("y", function(d, i) {
             console.log(i);
             return y2(i + .5);})
@@ -161,19 +161,24 @@ function et_vis(){
     dataGroup.forEach(data => {
 
         var tempdata = JSON.parse(JSON.stringify(data));
-
+        for( var v = tempdata.data.length-1; v--;){
+            if ((tempdata.data[v].time > 900 ) || (tempdata.data[v].hunger === 0) ) tempdata.data.splice(v, 1);
+        //&& tempdata.data[v].hunger === null
+            console.log(tempdata.data[v].time);
+            console.log(tempdata.data[v].hunger);
+        }
         //TODO:need to parse the data a bit - remove data where hunger - 0?
         //i dont know what firebase did
         //it be weird
 
         console.log(tempdata);
 
-        //mini item rects
-        mini.append("g").selectAll("miniItems")
+        //event item rects
+        event.append("g").selectAll("eventItems")
             .data(tempdata.data)
             .enter().append("circle")
-            .attr("class", "miniItem" + tempdata.class)
-            .attr("cx", function(d) {return x(d.time)})
+            .attr("class", "eventItem" + tempdata.class)
+            .attr("cx", function(d) {return x(d.time)+50})
             .attr("cy", y2(tempdata.class + .5) - 5)
             .attr("r", 5)
             .attr("style",function (d) {
@@ -202,8 +207,8 @@ function et_vis(){
                     .style("opacity", 0);
             });
 
-        // //mini labels
-        // mini.append("g").selectAll(".miniLabels")
+        // //event labels
+        // event.append("g").selectAll(".eventLabels")
         //     .data(tempdata)
         //     .enter().append("text")
         //     .text(function(d) {return d.label;})
