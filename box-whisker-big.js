@@ -226,13 +226,13 @@ function updateBigData(){
         bwA1Se,
         bwA2Se,
         bwA3Se,
-        bwA4Se,
+        bwA4Se
         //####
-        bwA0T,
-        bwA1T,
-        bwA2T,
-        bwA3T,
-        bwA4T
+        // bwA0T,
+        // bwA1T,
+        // bwA2T,
+        // bwA3T,
+        // bwA4T
     ];
     xLabels = [
         "Age0-Hunger",
@@ -259,12 +259,12 @@ function updateBigData(){
         "Age1-Security",
         "Age2-Security",
         "Age3-Security",
-        "Age4-Security",
-        "Age0-Time",
-        "Age1-Time",
-        "Age2-Time",
-        "Age3-Time",
-        "Age4-Time"
+        "Age4-Security"
+        // "Age0-Time",
+        // "Age1-Time",
+        // "Age2-Time",
+        // "Age3-Time",
+        // "Age4-Time"
     ];
 
     selectedPlot = "BigData";
@@ -339,11 +339,17 @@ function bw_vis(){
         //remove null or 0 values
         if(!nulldata){
             for( var v = tempdata.length-1; v--;){
+                //cap at 1
+                if (tempdata[v]>1) tempdata = 1;
+                //remove
                 if ((tempdata[v] === 0) || (isNaN(tempdata[v]))) tempdata.splice(v, 1);
             }
         }
         else{
             for( var v = tempdata.length-1; v--;){
+                //cap at 1
+                if (tempdata[v]>1) tempdata = 1;
+                //remove
                 if (isNaN(tempdata[v])) tempdata.splice(v, 1);
             }
         }
