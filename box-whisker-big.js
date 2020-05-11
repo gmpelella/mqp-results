@@ -347,7 +347,7 @@ function bw_vis(){
         if(!nulldata){
             for( var v = tempdata.length-1; v--;){
                 //cap at 1
-                if (tempdata[v]>1) tempdata = 1;
+                if (tempdata[v]>1) tempdata[v] = 1;
                 //remove
                 if ((tempdata[v] === 0) || (isNaN(tempdata[v]))) tempdata.splice(v, 1);
             }
