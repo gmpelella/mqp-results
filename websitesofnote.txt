@@ -15,6 +15,11 @@ https://www.d3-graph-gallery.com/graph/boxplot_several_groups.html
 step3: (show points w b&w)
 https://www.d3-graph-gallery.com/graph/boxplot_show_individual_points.html
 
+cool shit:
+http://www.d3noob.org/2014/02/styles-in-d3js.html
 
-
+timeline guide kinda:
 http://bl.ocks.org/bunkat/2338034
+
+color names:
+https://bl.ocks.org/enjalot/7c0fe907ba2010fed420

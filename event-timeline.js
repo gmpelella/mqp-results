@@ -157,6 +157,7 @@ function et_vis(){
         .style("opacity", 0);
 
 
+    let acount = 0;
     //for each set of time/details in dataGroup
     dataGroup.forEach(data => {
 
@@ -164,9 +165,27 @@ function et_vis(){
         for( var v = tempdata.data.length-1; v--;){
             if ((tempdata.data[v].time > 900 ) || (tempdata.data[v].hunger === 0) ) tempdata.data.splice(v, 1);
         //&& tempdata.data[v].hunger === null
-            console.log(tempdata.data[v].time);
-            console.log(tempdata.data[v].hunger);
+
+
         }
+        //go thru again?
+        for( var v = tempdata.data.length-1; v--;){
+            if ((tempdata.data[v].time > 900 ) || (tempdata.data[v].hunger === 0) ) tempdata.data.splice(v, 1);
+            //&& tempdata.data[v].hunger === null
+            if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
+            if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
+            if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
+            if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
+            if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
+            if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
+            if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
+            if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
+
+            // console.log(tempdata.data[v].time);
+            // console.log(tempdata.data[v].hunger);
+        }
+
+
         //TODO:need to parse the data a bit - remove data where hunger - 0?
         //i dont know what firebase did
         //it be weird
@@ -180,18 +199,31 @@ function et_vis(){
             .attr("class", "eventItem" + tempdata.class)
             .attr("cx", function(d) {return x(d.time)+50})
             .attr("cy", y2(tempdata.class + .5) - 5)
-            .attr("r", 5)
+            .attr("r", function(d){
+                acount++;
+                if(acount == 1 || acount == 6 || acount == 11 || acount == 16 || acount == 21  ){
+                    console.log(acount);
+                    return 9;
+                }
+                else{return 6; }
+            })
+
             .attr("style",function (d) {
                 if(d.age == "Stone Age") return "fill: palevioletred";
-                if(d.age == "Metal Age") return "fill: peachpuff";
+                if(d.age == "Metal Age") return "fill: orange";
                 if(d.age == "Conquering Age") return "fill: olivedrab";
                 if(d.age == "Industrial Age") return "fill: mediumaquamarine";
                 if(d.age == "Space Age") return "fill: steelblue";
             })
+            .style("opacity", 0.5)
+            //TODO://make selected circle larger too
             .on("mouseover", function(d) {
+                d3.select(this).style("stroke","black")
+                    .style("stroke-opacity",1);
                 div.transition()
                     .duration(200)
                     .style("opacity", .9);
+
                 div	.html("Age: "+d.age +"<br/>"+
                         "Time: "+parseInt(d.time)+" s"+ "<br/>"+
                         "Hunger: "+d.hunger +"%"+"<br/>"+
@@ -202,10 +234,12 @@ function et_vis(){
                     .style("top", (d3.event.pageY - 90) + "px");
             })
             .on("mouseout", function(d) {
+                d3.select(this).style("stroke-opacity",0);
                 div.transition()
                     .duration(500)
                     .style("opacity", 0);
             });
+        acount = 0;
 
         // //event labels
         // event.append("g").selectAll(".eventLabels")
