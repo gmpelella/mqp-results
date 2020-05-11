@@ -58,20 +58,15 @@ function et_vis(){
 
 
     var margin = {top: 10, right: 30, bottom: 30, left: 100},
-        width = 2000 - margin.left - margin.right,
+        width = 4000 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom,
-        eventHeight = (height*7.3) - (orderedIDs.length * 7),
-        mainHeight = height - eventHeight -50;
+        eventHeight = (height*7.3) - (orderedIDs.length * 7);
 
     //scales
     var x = d3.scaleLinear()
-        .domain([0, 2000])
+        .domain([0, 1000])
         .range([0, width]);
-    var x1 = d3.scaleLinear()
-        .range([0, width]);
-    var y1 = d3.scaleLinear()
-        .domain([0, ids.length])
-        .range([0, mainHeight]);
+
     var y2 = d3.scaleLinear()
         .domain([0, ids.length])
         .range([0, eventHeight]);
@@ -83,19 +78,6 @@ function et_vis(){
         // .append("g")
         // .attr("transform",  "translate(" + margin.left + "," + margin.top + ")");
 
-    // svg.append("defs")
-    //     .append("clipPath")
-    //     .attr("id", "clip")
-    //     .append("rect")
-    //     .attr("width", width)
-    //     .attr("height", mainHeight+50);
-
-
-    // var main = svg.append("g")
-    //     .attr("transform", "translate(" + margin.right + "," + margin.top + ")")
-    //     .attr("width", width)
-    //     .attr("height", mainHeight)
-    //     .attr("class", "main");
 
     var event = svg.append("g")
         .attr("transform", "translate(" + margin.right + "," + margin.top + ")")
@@ -103,27 +85,6 @@ function et_vis(){
         .attr("height", eventHeight+10)
         .attr("class", "event");
 
-
-    //
-    // //main lanes and texts
-    // main.append("g").selectAll(".laneLines")
-    //     .data(dataGroup)
-    //     .enter().append("line")
-    //     .attr("x1", margin.right)
-    //     .attr("y1", function(d) {return y1(d.class);})
-    //     .attr("x2", width)
-    //     .attr("y2", function(d) {return y1(d.class);})
-    //     .attr("stroke", "lightgray");
-    //
-    // main.append("g").selectAll(".laneText")
-    //     .data(ids)
-    //     .enter().append("text")
-    //     .text(function(d) {return d;})
-    //     .attr("x", -margin.right)
-    //     .attr("y", function(d, i) {return y1(i + .5);})
-    //     .attr("dy", ".5ex")
-    //     .attr("text-anchor", "end")
-    //     .attr("class", "laneText");
 
     //event lanes and texts
     event.append("g").selectAll(".laneLines")
@@ -181,14 +142,16 @@ function et_vis(){
             if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
             if ((tempdata.data[v].time > 900 )  ) tempdata.data.splice(v, 1);
 
+            //welp its removing any duplicates? i guess? idk?
+
             // console.log(tempdata.data[v].time);
             // console.log(tempdata.data[v].hunger);
         }
 
 
-        //TODO:need to parse the data a bit - remove data where hunger - 0?
         //i dont know what firebase did
         //it be weird
+        //also javascript. heck javascript
 
         console.log(tempdata);
 
@@ -216,7 +179,6 @@ function et_vis(){
                 if(d.age == "Space Age") return "fill: steelblue";
             })
             .style("opacity", 0.5)
-            //TODO://make selected circle larger too
             .on("mouseover", function(d) {
                 d3.select(this).style("stroke","black")
                     .style("stroke-opacity",1);
@@ -240,16 +202,6 @@ function et_vis(){
                     .style("opacity", 0);
             });
         acount = 0;
-
-        // //event labels
-        // event.append("g").selectAll(".eventLabels")
-        //     .data(tempdata)
-        //     .enter().append("text")
-        //     .text(function(d) {return d.label;})
-        //     .attr("x", function(d,i) {return x(d.data[i].time);})
-        //     .attr("y", function(d) {return y2(d.class + .5);})
-        //     .attr("dy",".5ex");
-
 
         //details here
 
