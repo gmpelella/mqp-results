@@ -288,6 +288,13 @@ function bw_vis(){
         svg.selectAll("circle").remove();
         svg.selectAll("indPoints").remove();
         svg.selectAll("g").remove();
+
+        svg.selectAll("defs").remove();
+        svg.selectAll("clipPath").remove();
+        svg.selectAll(".laneLines").remove();
+        svg.selectAll(".laneText").remove();
+        svg.selectAll("eventItems").remove();
+        svg.selectAll(".eventLabels").remove();
     }
     //#####################################################
 
