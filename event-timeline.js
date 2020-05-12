@@ -8,6 +8,7 @@ var playtesters = ["playtester 0","playtester 1","playtester 2","playtester 3","
 
 function updateEvent(){
 
+
     dataGroup=[];
     for (var i=0; i < orderedIDs.length; i++){
         dataGroup.push(
@@ -31,6 +32,12 @@ function updateEvent(){
 
 //http://bl.ocks.org/bunkat/2338034
 function et_vis(){
+
+    //hide checkbox & text
+    document.getElementById("dataCheck").style.display = "none";
+    document.getElementById("checkboxtext").style.display = "none";
+
+
     //#####################################################
     //remove previous lines, rects, circles
     var svg = d3.select("#vis");
