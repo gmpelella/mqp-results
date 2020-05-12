@@ -327,11 +327,13 @@ function bw_vis(){
     svg.append("g").call(d3.axisLeft(y));
 
     //color for boxes for age ????????????????????????
-    var myColor = d3.scaleOrdinal()
-        .domain([1,5])
-        .range(d3.schemeSet3);
+    // var myColor = d3.scaleOrdinal()
+    //     .domain([1,5])
+    //     .range();
     //legend for color
     //https://www.d3-graph-gallery.com/graph/custom_legend.html
+
+    var mycolor = ["palevioletred","orange","olivedrab","mediumaquamarine","steelblue"];
 
     //console.log(dataGroup);
     var i = 0;
@@ -407,7 +409,8 @@ function bw_vis(){
             .attr("height", y(q1)-y(q3))
             .attr("width", boxWidth )
             .attr("stroke", "black")
-            .attr("fill", d3.schemeSet3[agei]);
+            .attr("fill", mycolor[agei])
+            .style("opacity", .7);
 
         // show median, min and max horizontal lines
         svg.selectAll("medianLines")
