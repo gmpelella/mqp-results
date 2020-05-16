@@ -40,8 +40,8 @@ function updateEvent(){
 function et_vis(){
 
     //hide checkbox & text
-    document.getElementById("dataCheck").style.display = "none";
-    document.getElementById("checkboxtext").style.display = "none";
+    // document.getElementById("dataCheck").style.display = "none";
+    // document.getElementById("checkboxtext").style.display = "none";
 
 
     //#####################################################

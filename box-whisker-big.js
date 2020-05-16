@@ -284,8 +284,8 @@ function updateBigData(){
 function bw_vis(){
 
     //show checkbox
-    document.getElementById("dataCheck").style.display = "inline";
-    document.getElementById("checkboxtext").style.display = "inline";
+    // document.getElementById("dataCheck").style.display = "inline";
+    // document.getElementById("checkboxtext").style.display = "inline";
 
     //#####################################################
     //remove previous lines, rects, circles
