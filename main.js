@@ -599,8 +599,8 @@ function parseData(data){
 
     });
     //on startup, do the box&whisker visual with general ages / stats
-    //updateBigData();
-    updateEvent();
+    updateBigData();
+    //updateEvent();
 }
 
 
