@@ -356,6 +356,9 @@ function bw_vis(){
         //console.log(agei);
 
         var tempdata = data.filter(() => true);
+
+        console.log(tempdata);
+
         //remove null or 0 values
         if(!nulldata){
             for( var v = tempdata.length-1; v--;){
